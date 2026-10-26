@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 270" role="img" aria-labelledby="t d">
+<title id="t">Where deals end up, by stage</title><desc id="d">Most deals that never get past Prospecting, Qualification or Proposal are left open after their close date. In Negotiation, 70 were won, 79 lost and 78 left open.</desc>
+<style>
+  :root { --ink:#0b0b0b; --muted:#52514e; --grid:#d9d8d3; --won:#2a78d6; --open:#eb6834; --lost:#1baf7a; --other:#8a8984; }
+  @media (prefers-color-scheme: dark) {
+    :root { --ink:#f0efec; --muted:#c3c2b7; --grid:#3a3a38; --won:#3987e5; --open:#d95926; --lost:#199e70; --other:#8a8984; }
+  }
+  text { font-family: system-ui, -apple-system, 'Segoe UI', sans-serif; fill: var(--ink); font-size: 13px; }
+  .muted { fill: var(--muted); font-size: 12px; }
+  .strong { font-weight: 600; }
+  .on { fill: #0b0b0b; font-size: 12px; font-weight: 600; }
+  .grid { stroke: var(--grid); stroke-width: 1; }
+  .won { fill: var(--won); } .open { fill: var(--open); } .lost { fill: var(--lost); } .other { fill: var(--other); }
+</style>
+<rect x="200" y="12" width="12" height="12" rx="2" class="won"/>
+<text x="218" y="23" class="muted">Won</text>
+<rect x="261" y="12" width="12" height="12" rx="2" class="lost"/>
+<text x="279" y="23" class="muted">Lost</text>
+<rect x="329" y="12" width="12" height="12" rx="2" class="open"/>
+<text x="347" y="23" class="muted">Left open after close date</text>
+<text x="190" y="66" text-anchor="end" class="strong">Prospecting</text>
+<text x="190" y="82" text-anchor="end" class="muted">123 deals</text>
+<rect x="200.0" y="50" width="8.4" height="36" class="won"><title>5</title></rect>
+<rect x="210.4" y="50" width="2.2" height="36" class="lost"><title>2</title></rect>
+<rect x="214.6" y="50" width="240.1" height="36" class="open"><title>116</title></rect>
+<text x="334.7" y="72.0" text-anchor="middle" class="on">116</text>
+<text x="190" y="116" text-anchor="end" class="strong">Qualification</text>
+<text x="190" y="132" text-anchor="end" class="muted">92 deals</text>
+<rect x="200.0" y="100" width="190.0" height="36" class="open"><title>92</title></rect>
+<text x="295.0" y="122.0" text-anchor="middle" class="on">92</text>
+<text x="190" y="166" text-anchor="end" class="strong">Proposal</text>
+<text x="190" y="182" text-anchor="end" class="muted">113 deals</text>
+<rect x="200.0" y="150" width="18.9" height="36" class="won"><title>10</title></rect>
+<rect x="220.9" y="150" width="2.2" height="36" class="lost"><title>2</title></rect>
+<rect x="225.0" y="150" width="208.8" height="36" class="open"><title>101</title></rect>
+<text x="329.4" y="172.0" text-anchor="middle" class="on">101</text>
+<text x="190" y="216" text-anchor="end" class="strong">Negotiation</text>
+<text x="190" y="232" text-anchor="end" class="muted">227 deals</text>
+<rect x="200.0" y="200" width="144.1" height="36" class="won"><title>70</title></rect>
+<text x="272.0" y="222.0" text-anchor="middle" class="on">70</text>
+<rect x="346.1" y="200" width="162.9" height="36" class="lost"><title>79</title></rect>
+<text x="427.5" y="222.0" text-anchor="middle" class="on">79</text>
+<rect x="511.0" y="200" width="160.8" height="36" class="open"><title>78</title></rect>
+<text x="591.3" y="222.0" text-anchor="middle" class="on">78</text>
+<text x="200" y="258" class="muted">Deals whose close date has passed, by the furthest stage they reached</text>
+</svg>

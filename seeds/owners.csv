@@ -1,0 +1,14 @@
+owner_id,name,email,role_start_date,role_end_date,role,manager,segment
+owner_1,Christopher Moore,danielledunn@gmail.com,2023-02-12,,Account Executive,Traci Price,SMB
+owner_2,Amber Jenkins,afoster@yahoo.com,2023-06-21,,Account Executive,Victoria Brown,SMB
+owner_3,Mark Lopez,halleric@yahoo.com,2023-09-22,,Account Executive,Stacey Mason,SMB
+owner_4,Kristen Mann,mhunt@james.org,2022-12-26,,Account Executive,Teresa Vaughn,SMB
+owner_5,Dawn Alexander,kelliparker@coleman.com,2023-07-27,,Account Executive,Laura Sanchez,SMB
+owner_6,Kelly Lin,baldwinamy@gmail.com,2023-07-25,,Account Executive,Courtney Hughes,Mid-Market
+owner_7,Dr. Kimberly Brennan,laura27@hotmail.com,2022-11-12,2025-05-15,Account Executive,Courtney Hughes,Mid-Market
+owner_8,Allen Gilmore,wilsonrebecca@alexander.info,2023-03-14,,Account Executive,Teresa Vaughn,Mid-Market
+owner_9,Barbara Robinson,kevinbaker@yahoo.com,2022-11-12,,Account Executive,Laura Sanchez,Mid-Market
+owner_10,Anthony Jackson,robert20@stein.com,2023-07-06,,Account Executive,Christopher Kim,Enterprise
+owner_11,Michael Williams,michael@stein.com,2023-04-28,,Account Executive,Matthew Kennedy,Enterprise
+owner_12,Amanda Hutchinson,evansbryce@brock.net,2024-07-03,2025-04-01,Account Executive,Teresa Vaughn,Strategic
+owner_13,Eileen Nunez,onealstephanie@flores.info,2024-01-04,,Account Executive,Traci Price,Strategic

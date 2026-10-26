@@ -1,0 +1,8 @@
+# DuckDB local warehouse, no secrets. Path is relative to the main folder, where dbt runs.
+innovatech:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: innovatech.duckdb
+      threads: 4

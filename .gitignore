@@ -1,0 +1,17 @@
+# python venv
+revops/
+.venv/
+
+# dbt artifacts
+target/
+dbt_packages/
+logs/
+
+# local warehouse
+*.duckdb
+*.duckdb.wal
+
+.env
+
+# dbt anonymous user id
+.user.yml

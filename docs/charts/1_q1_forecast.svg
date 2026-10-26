@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 226" role="img" aria-labelledby="t d">
+<title id="t">Q1 forecast and bookings</title><desc id="d">On 6 January the Q1 forecast was $871k: $409k was won, $107k lost and $354k left open after its close date. Q1 booked $949k.</desc>
+<style>
+  :root { --ink:#0b0b0b; --muted:#52514e; --grid:#d9d8d3; --won:#2a78d6; --open:#eb6834; --lost:#1baf7a; --other:#8a8984; }
+  @media (prefers-color-scheme: dark) {
+    :root { --ink:#f0efec; --muted:#c3c2b7; --grid:#3a3a38; --won:#3987e5; --open:#d95926; --lost:#199e70; --other:#8a8984; }
+  }
+  text { font-family: system-ui, -apple-system, 'Segoe UI', sans-serif; fill: var(--ink); font-size: 13px; }
+  .muted { fill: var(--muted); font-size: 12px; }
+  .strong { font-weight: 600; }
+  .on { fill: #0b0b0b; font-size: 12px; font-weight: 600; }
+  .grid { stroke: var(--grid); stroke-width: 1; }
+  .won { fill: var(--won); } .open { fill: var(--open); } .lost { fill: var(--lost); } .other { fill: var(--other); }
+</style>
+<rect x="200" y="12" width="12" height="12" rx="2" class="won"/>
+<text x="218" y="23" class="muted">Won</text>
+<rect x="261" y="12" width="12" height="12" rx="2" class="lost"/>
+<text x="279" y="23" class="muted">Lost</text>
+<rect x="329" y="12" width="12" height="12" rx="2" class="open"/>
+<text x="347" y="23" class="muted">Left open after close date</text>
+<rect x="551" y="12" width="12" height="12" rx="2" class="other"/>
+<text x="569" y="23" class="muted">Not in the forecast</text>
+<text x="190" y="82" text-anchor="end" class="strong">Forecast on 6 Jan</text>
+<text x="190" y="99" text-anchor="end" class="muted">$871k</text>
+<rect x="200.0" y="66" width="172.0" height="44" class="won"><title>$409k</title></rect>
+<text x="286.0" y="92.0" text-anchor="middle" class="on">$409k</text>
+<rect x="374.0" y="66" width="43.5" height="44" class="lost"><title>$107k</title></rect>
+<text x="395.8" y="92.0" text-anchor="middle" class="on">$107k</text>
+<rect x="419.5" y="66" width="148.6" height="44" class="open"><title>$354k</title></rect>
+<text x="493.8" y="92.0" text-anchor="middle" class="on">$354k</text>
+<text x="190" y="152" text-anchor="end" class="strong">Q1 bookings</text>
+<text x="190" y="169" text-anchor="end" class="muted">$949k</text>
+<rect x="200.0" y="136" width="174.1" height="44" class="won"><title>$414k</title></rect>
+<text x="287.1" y="162.0" text-anchor="middle" class="on">$414k</text>
+<rect x="376.1" y="136" width="225.3" height="44" class="other"><title>$535k</title></rect>
+<text x="488.8" y="162.0" text-anchor="middle" class="on">$535k</text>
+<line x1="692.0" x2="692.0" y1="52" y2="196" stroke="var(--ink)" stroke-dasharray="4 3"/>
+<text x="692.0" y="214" text-anchor="end" class="muted">Target about $1.16M (estimate)</text>
+</svg>

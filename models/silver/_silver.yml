@@ -1,0 +1,97 @@
+version: 2
+
+models:
+  - name: stg_deals
+    description: "Silver. Deals cleaned and renamed, with lifecycle and data-quality flags. Grain: one row per deal."
+    columns:
+      - name: deal_id
+        description: Primary key.
+        data_tests: [unique, not_null]
+      - name: owner_id
+        data_tests:
+          - relationships:
+              arguments:
+                to: ref('stg_owners')
+                field: owner_id
+      - name: stage
+        description: Current stage (renamed from deal_stage).
+      - name: stage_order
+        description: Funnel position, 1 = Prospecting ... 4 = Negotiation, 5 = Closed.
+        data_tests: [not_null]
+      - name: segment
+        description: Account size (renamed from account_size).
+      - name: sales_motion
+        description: Direct or Channel (renamed from record_type).
+      - name: amount
+        description: Deal value in USD (renamed from deal_amount).
+      - name: is_won
+      - name: is_lost
+      - name: is_open
+      - name: is_forecast_ahead_of_stage
+        description: >
+          DQ flag. Commit before Negotiation or Best Case before Proposal.
+          Forecast category claims more certainty than the stage supports.
+        data_tests:
+          - accepted_values:
+              arguments:
+                values: [false]
+              config:
+                severity: warn
+      - name: is_created_after_as_of
+        description: DQ flag. Created after the last snapshot (as_of_date), so it has no history.
+
+  - name: stg_deal_snapshots
+    description: "Silver. Weekly pipeline snapshots. Grain: one row per deal per snapshot_date."
+    data_tests:
+      - unique:
+          arguments:
+            column_name: "deal_id || '|' || snapshot_date"
+    columns:
+      - name: deal_id
+        data_tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('stg_deals')
+                field: deal_id
+      - name: snapshot_quarter
+        description: Quarter of the snapshot.
+      - name: close_quarter
+        description: Quarter of the expected close date as of the snapshot.
+      - name: stage_order
+        data_tests: [not_null]
+      - name: is_closed
+      - name: is_quarter_start_snapshot
+        description: True for the first snapshot of each quarter (the start-of-quarter forecast call).
+
+  - name: stg_owners
+    description: "Silver. Sales reps without PII (email dropped). Grain: one row per owner."
+    columns:
+      - name: owner_id
+        data_tests: [unique, not_null]
+      - name: is_active_as_of
+        description: Still in role on the as_of_date.
+
+  - name: stg_targets
+    description: >
+      Silver. Quarterly targets with the quarter parsed to a date. Grain: one row per owner per quarter.
+      DQ: in 2024 Q2 targets jump 1.75-6.15x per rep, and from 2024 Q3 every target is exactly
+      6.153x the same rep's prior quarter. Only 2024 Q1 is usable as quota.
+    data_tests:
+      - unique:
+          arguments:
+            column_name: "quarter_label || '|' || owner_id"
+    columns:
+      - name: quarter_start_date
+        description: First day of the quarter.
+        data_tests: [not_null]
+      - name: qoq_growth
+        description: Target divided by the same owner's previous-quarter target.
+      - name: is_target_plausible
+        description: False when the target more than doubled vs the prior quarter.
+        data_tests:
+          - accepted_values:
+              arguments:
+                values: [true]
+              config:
+                severity: warn

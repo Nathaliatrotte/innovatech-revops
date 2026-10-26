@@ -1,0 +1,32 @@
+name: 'innovatech'
+version: '1.0.0'
+profile: 'innovatech'
+
+model-paths: ["models"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+clean-targets:
+  - "target"
+  - "dbt_packages"
+
+vars:
+  # "Today" for the case = last weekly snapshot available. Everything open/stale is measured against it.
+  as_of_date: '2025-06-09'
+
+# Medallion layers map to DuckDB schemas: 1_bronze (seeds) -> 2_silver -> 3_gold
+seeds:
+  innovatech:
+    +schema: 1_bronze
+
+models:
+  innovatech:
+    silver:
+      +schema: 2_silver
+      +materialized: view
+    gold:
+      +schema: 3_gold
+      +materialized: table

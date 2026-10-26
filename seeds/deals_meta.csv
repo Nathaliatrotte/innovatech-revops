@@ -1,0 +1,701 @@
+deal_id,owner_id,created_date,close_date,deal_stage,forecast_category,record_type,deal_type,deal_order_type,account_industry,account_region,account_size,deal_source,deal_amount
+deal_31,owner_1,2024-12-21,2025-06-02,Closed Lost,Closed,Channel,Existing Business,Upsell,Tech,LATAM,SMB,Outbound,22127
+deal_34,owner_1,2024-05-29,2024-11-11,Prospecting,Pipeline,Direct,Existing Business,Cross-Sell,Retail,EMEA,SMB,Partner,23224
+deal_65,owner_1,2024-08-26,2025-02-04,Prospecting,Pipeline,Direct,Existing Business,Cross-Sell,Healthcare,LATAM,SMB,Outbound,17680
+deal_78,owner_1,2024-02-21,2024-03-03,Closed Won,Closed,Channel,New Business,New Client,Finance,EMEA,SMB,Outbound,53629
+deal_92,owner_1,2024-06-08,2024-11-24,Qualification,Pipeline,Channel,New Business,New Client,Healthcare,LATAM,SMB,Inbound,23492
+deal_93,owner_1,2024-01-04,2024-02-17,Negotiation,Best Case,Direct,New Business,New Client,Retail,LATAM,SMB,Referral,60487
+deal_102,owner_1,2025-02-18,2025-06-16,Negotiation,Best Case,Channel,New Business,New Client,Tech,LATAM,SMB,Inbound,29675
+deal_128,owner_1,2024-07-18,2024-12-17,Closed Won,Closed,Channel,New Business,New Client,Tech,LATAM,SMB,Marketing Event,70101
+deal_147,owner_1,2024-08-06,2025-02-02,Closed Lost,Closed,Direct,Existing Business,Upsell,Retail,EMEA,SMB,Marketing Event,30694
+deal_152,owner_1,2025-03-26,2025-06-21,Closed Lost,Closed,Channel,New Business,New Client,Retail,EMEA,SMB,Outbound,44764
+deal_155,owner_1,2024-10-19,2024-12-02,Closed Won,Closed,Channel,New Business,New Client,Finance,LATAM,SMB,Marketing Event,74233
+deal_175,owner_1,2024-06-12,2024-09-10,Negotiation,Best Case,Direct,New Business,New Client,Finance,EMEA,SMB,Referral,53284
+deal_194,owner_1,2024-04-06,2024-05-18,Closed Won,Closed,Channel,Existing Business,Upsell,Tech,North America,SMB,Marketing Event,81307
+deal_199,owner_1,2024-09-30,2025-01-05,Prospecting,Pipeline,Direct,New Business,New Client,Finance,North America,SMB,Inbound,48369
+deal_205,owner_1,2024-09-06,2024-10-02,Proposal,Best Case,Direct,Existing Business,Cross-Sell,Healthcare,EMEA,SMB,Marketing Event,29174
+deal_207,owner_1,2024-07-22,2024-08-24,Closed Lost,Closed,Direct,New Business,New Client,Tech,EMEA,SMB,Partner,48971
+deal_240,owner_1,2025-01-17,2025-06-26,Proposal,Best Case,Channel,New Business,New Client,Finance,North America,SMB,Referral,60238
+deal_244,owner_1,2024-03-20,2024-07-13,Prospecting,Pipeline,Channel,New Business,New Client,Tech,LATAM,SMB,Marketing Event,61270
+deal_245,owner_1,2025-04-02,2025-09-12,Qualification,Pipeline,Channel,Existing Business,Upsell,Healthcare,EMEA,SMB,Partner,18133
+deal_262,owner_1,2025-08-02,2025-08-18,Closed Lost,Closed,Channel,Existing Business,Upsell,Retail,North America,SMB,Partner,30497
+deal_281,owner_1,2024-09-03,2024-11-17,Prospecting,Pipeline,Channel,New Business,New Client,Tech,LATAM,SMB,Partner,31200
+deal_284,owner_1,2025-08-16,2025-10-22,Closed Won,Closed,Channel,New Business,New Client,Finance,North America,SMB,Inbound,54266
+deal_293,owner_1,2024-12-03,2025-02-16,Proposal,Best Case,Channel,New Business,New Client,Finance,North America,SMB,Outbound,27932
+deal_325,owner_1,2025-03-03,2025-06-08,Qualification,Pipeline,Channel,New Business,New Client,Finance,EMEA,SMB,Marketing Event,16640
+deal_328,owner_1,2024-11-05,2025-04-04,Qualification,Pipeline,Channel,New Business,New Client,Retail,North America,SMB,Marketing Event,25533
+deal_334,owner_1,2025-01-31,2025-04-11,Prospecting,Pipeline,Direct,Existing Business,Cross-Sell,Healthcare,LATAM,SMB,Inbound,24377
+deal_103,owner_12,2024-12-10,2025-03-28,Negotiation,Commit,Channel,New Business,New Client,Finance,EMEA,Strategic,Outbound,81934
+deal_112,owner_12,2024-08-24,2025-02-13,Negotiation,Commit,Direct,Existing Business,Upsell,Retail,North America,Strategic,Marketing Event,67961
+deal_390,owner_1,2025-03-13,2025-07-29,Qualification,Pipeline,Channel,Existing Business,Upsell,Retail,EMEA,SMB,Referral,23468
+deal_396,owner_1,2024-03-01,2024-06-18,Closed Lost,Closed,Direct,Existing Business,Upsell,Retail,EMEA,SMB,Inbound,25622
+deal_118,owner_6,2025-02-23,2025-05-26,Negotiation,Commit,Direct,New Business,New Client,Healthcare,EMEA,Mid-Market,Partner,48188
+deal_124,owner_11,2024-08-17,2024-11-26,Negotiation,Commit,Direct,New Business,New Client,Healthcare,North America,Enterprise,Outbound,111940
+deal_427,owner_1,2024-07-15,2024-10-09,Prospecting,Pipeline,Direct,New Business,New Client,Finance,North America,SMB,Outbound,35835
+deal_439,owner_1,2025-01-24,2025-04-23,Closed Lost,Closed,Channel,Existing Business,Cross-Sell,Tech,North America,SMB,Outbound,19155
+deal_442,owner_1,2024-03-15,2024-07-02,Closed Lost,Closed,Channel,New Business,New Client,Retail,LATAM,SMB,Inbound,32695
+deal_447,owner_1,2024-01-26,2024-05-30,Closed Won,Closed,Channel,New Business,New Client,Healthcare,EMEA,SMB,Inbound,49861
+deal_481,owner_1,2025-01-29,2025-04-17,Proposal,Best Case,Channel,New Business,New Client,Finance,North America,SMB,Referral,49846
+deal_492,owner_1,2025-02-25,2025-05-26,Prospecting,Pipeline,Channel,Existing Business,Cross-Sell,Healthcare,North America,SMB,Referral,20151
+deal_501,owner_1,2025-01-11,2025-07-08,Qualification,Pipeline,Direct,New Business,New Client,Retail,EMEA,SMB,Inbound,29026
+deal_506,owner_1,2024-03-29,2024-06-12,Closed Lost,Closed,Channel,Existing Business,Cross-Sell,Healthcare,EMEA,SMB,Marketing Event,15837
+deal_521,owner_1,2024-02-09,2024-05-26,Prospecting,Pipeline,Channel,New Business,New Client,Finance,EMEA,SMB,Marketing Event,20946
+deal_526,owner_1,2024-06-17,2024-11-10,Prospecting,Pipeline,Channel,New Business,New Client,Finance,North America,SMB,Outbound,33730
+deal_535,owner_1,2025-04-15,2025-08-14,Closed Lost,Closed,Direct,Existing Business,Cross-Sell,Retail,EMEA,SMB,Partner,29301
+deal_539,owner_1,2024-04-08,2024-08-08,Prospecting,Pipeline,Direct,New Business,New Client,Finance,North America,SMB,Outbound,35860
+deal_544,owner_1,2025-03-27,2025-07-13,Proposal,Best Case,Channel,New Business,New Client,Retail,LATAM,SMB,Inbound,20829
+deal_130,owner_12,2025-02-19,2025-07-20,Negotiation,Commit,Direct,New Business,New Client,Retail,North America,Strategic,Marketing Event,99425
+deal_548,owner_1,2024-09-13,2025-02-20,Proposal,Best Case,Channel,New Business,New Client,Healthcare,LATAM,SMB,Inbound,40581
+deal_560,owner_1,2024-01-02,2024-02-17,Prospecting,Pipeline,Channel,Existing Business,Upsell,Retail,North America,SMB,Outbound,26253
+deal_606,owner_1,2025-03-18,2025-06-03,Prospecting,Pipeline,Direct,Existing Business,Upsell,Retail,LATAM,SMB,Inbound,30996
+deal_623,owner_1,2024-10-11,2025-03-25,Qualification,Pipeline,Channel,Existing Business,Upsell,Finance,LATAM,SMB,Partner,20754
+deal_627,owner_1,2025-08-24,2026-01-19,Closed Lost,Closed,Direct,New Business,New Client,Tech,EMEA,SMB,Partner,62964
+deal_640,owner_1,2024-10-22,2025-01-24,Closed Won,Closed,Direct,Existing Business,Upsell,Tech,North America,SMB,Inbound,32000
+deal_642,owner_1,2024-02-03,2024-02-28,Qualification,Pipeline,Direct,New Business,New Client,Finance,LATAM,SMB,Marketing Event,40044
+deal_648,owner_1,2024-01-25,2024-04-28,Prospecting,Pipeline,Channel,Existing Business,Cross-Sell,Retail,EMEA,SMB,Marketing Event,18121
+deal_658,owner_1,2025-08-07,2026-01-21,Closed Lost,Closed,Direct,New Business,New Client,Tech,EMEA,SMB,Inbound,44232
+deal_671,owner_1,2025-04-18,2025-07-22,Proposal,Best Case,Direct,Existing Business,Cross-Sell,Tech,EMEA,SMB,Outbound,19744
+deal_695,owner_1,2024-10-14,2025-02-27,Qualification,Pipeline,Direct,New Business,New Client,Finance,LATAM,SMB,Marketing Event,51707
+deal_1,owner_10,2025-08-21,2025-10-31,Proposal,Best Case,Direct,New Business,New Client,Retail,North America,Enterprise,Referral,59689
+deal_7,owner_10,2024-03-11,2024-04-19,Closed Won,Closed,Channel,New Business,New Client,Retail,EMEA,Enterprise,Outbound,107404
+deal_32,owner_10,2024-05-25,2024-06-13,Prospecting,Pipeline,Direct,Existing Business,Cross-Sell,Retail,EMEA,Enterprise,Outbound,67528
+deal_131,owner_7,2024-10-15,2024-11-21,Negotiation,Commit,Direct,Existing Business,Upsell,Retail,LATAM,Mid-Market,Partner,25748
+deal_54,owner_10,2024-05-29,2024-10-05,Proposal,Best Case,Channel,New Business,New Client,Finance,North America,Enterprise,Referral,86869
+deal_63,owner_10,2025-01-26,2025-07-15,Prospecting,Pipeline,Direct,Existing Business,Cross-Sell,Retail,EMEA,Enterprise,Partner,51139
+deal_77,owner_10,2025-08-25,2025-10-29,Closed Lost,Closed,Channel,New Business,New Client,Tech,EMEA,Enterprise,Outbound,105561
+deal_83,owner_10,2025-08-01,2025-12-27,Qualification,Pipeline,Direct,Existing Business,Cross-Sell,Tech,North America,Enterprise,Inbound,46047
+deal_105,owner_10,2025-01-17,2025-07-11,Qualification,Pipeline,Direct,New Business,New Client,Retail,North America,Enterprise,Marketing Event,108258
+deal_106,owner_10,2025-08-26,2025-09-27,Closed Lost,Closed,Direct,New Business,New Client,Finance,LATAM,Enterprise,Inbound,258820
+deal_108,owner_10,2024-05-02,2024-07-11,Qualification,Pipeline,Direct,New Business,New Client,Retail,EMEA,Enterprise,Outbound,101151
+deal_110,owner_10,2024-03-20,2024-05-04,Prospecting,Pipeline,Channel,Existing Business,Cross-Sell,Tech,LATAM,Enterprise,Inbound,49274
+deal_127,owner_10,2024-11-07,2024-12-19,Proposal,Best Case,Channel,Existing Business,Cross-Sell,Tech,LATAM,Enterprise,Partner,69791
+deal_146,owner_10,2024-02-05,2024-04-08,Negotiation,Best Case,Channel,New Business,New Client,Tech,North America,Enterprise,Partner,88909
+deal_150,owner_10,2025-04-22,2025-07-03,Closed Won,Closed,Channel,New Business,New Client,Finance,EMEA,Enterprise,Referral,53916
+deal_198,owner_10,2025-03-29,2025-09-10,Prospecting,Pipeline,Direct,New Business,New Client,Tech,LATAM,Enterprise,Inbound,65584
+deal_201,owner_10,2024-10-28,2025-01-05,Proposal,Best Case,Direct,New Business,New Client,Healthcare,LATAM,Enterprise,Inbound,99737
+deal_214,owner_10,2024-10-08,2025-03-06,Qualification,Pipeline,Direct,Existing Business,Cross-Sell,Retail,LATAM,Enterprise,Partner,52676
+deal_248,owner_10,2024-09-06,2024-11-22,Closed Lost,Closed,Channel,New Business,New Client,Healthcare,North America,Enterprise,Referral,100513
+deal_250,owner_10,2024-12-29,2025-06-02,Closed Lost,Closed,Direct,New Business,New Client,Healthcare,EMEA,Enterprise,Outbound,103871
+deal_253,owner_10,2024-07-27,2024-09-06,Qualification,Pipeline,Direct,New Business,New Client,Retail,LATAM,Enterprise,Outbound,69909
+deal_300,owner_10,2025-08-27,2026-02-19,Closed Lost,Closed,Direct,Existing Business,Cross-Sell,Tech,EMEA,Enterprise,Referral,34188
+deal_331,owner_10,2024-11-12,2024-12-01,Prospecting,Pipeline,Direct,Existing Business,Cross-Sell,Retail,North America,Enterprise,Marketing Event,59472
+deal_357,owner_10,2024-08-23,2024-11-22,Proposal,Best Case,Channel,Existing Business,Upsell,Healthcare,North America,Enterprise,Partner,50437
+deal_360,owner_10,2024-11-17,2025-05-11,Qualification,Pipeline,Direct,New Business,New Client,Healthcare,EMEA,Enterprise,Referral,120194
+deal_380,owner_10,2025-03-05,2025-04-15,Qualification,Pipeline,Direct,Existing Business,Upsell,Retail,LATAM,Enterprise,Outbound,61470
+deal_382,owner_10,2024-09-09,2024-11-30,Proposal,Best Case,Direct,New Business,New Client,Healthcare,North America,Enterprise,Partner,71585
+deal_392,owner_10,2024-06-10,2024-12-05,Proposal,Best Case,Channel,Existing Business,Cross-Sell,Tech,EMEA,Enterprise,Partner,69045
+deal_424,owner_10,2025-04-02,2025-07-17,Closed Lost,Closed,Direct,Existing Business,Upsell,Healthcare,EMEA,Enterprise,Partner,15300
+deal_429,owner_10,2025-02-01,2025-03-19,Closed Won,Closed,Channel,Existing Business,Cross-Sell,Healthcare,LATAM,Enterprise,Inbound,85500
+deal_465,owner_10,2025-03-19,2025-07-07,Closed Lost,Closed,Direct,Existing Business,Cross-Sell,Finance,LATAM,Enterprise,Outbound,230816
+deal_488,owner_10,2025-03-15,2025-07-20,Proposal,Best Case,Direct,New Business,New Client,Finance,LATAM,Enterprise,Outbound,73638
+deal_490,owner_10,2024-12-30,2025-05-25,Proposal,Best Case,Direct,Existing Business,Cross-Sell,Finance,LATAM,Enterprise,Marketing Event,34135
+deal_547,owner_10,2024-10-03,2024-10-29,Negotiation,Best Case,Channel,New Business,New Client,Healthcare,North America,Enterprise,Marketing Event,82665
+deal_571,owner_10,2024-11-11,2025-02-16,Proposal,Best Case,Channel,New Business,New Client,Healthcare,LATAM,Enterprise,Referral,94903
+deal_572,owner_10,2024-04-20,2024-08-31,Closed Lost,Closed,Direct,New Business,New Client,Healthcare,North America,Enterprise,Referral,114626
+deal_582,owner_10,2024-03-25,2024-09-19,Proposal,Best Case,Direct,Existing Business,Upsell,Tech,EMEA,Enterprise,Marketing Event,46255
+deal_590,owner_10,2024-01-19,2024-04-17,Proposal,Best Case,Channel,New Business,New Client,Finance,North America,Enterprise,Outbound,102838
+deal_610,owner_10,2024-06-10,2024-10-25,Proposal,Best Case,Channel,Existing Business,Upsell,Healthcare,LATAM,Enterprise,Inbound,53802
+deal_621,owner_10,2024-05-15,2024-09-28,Closed Lost,Closed,Channel,New Business,New Client,Healthcare,North America,Enterprise,Inbound,40045
+deal_633,owner_10,2024-03-03,2024-07-22,Qualification,Pipeline,Direct,Existing Business,Cross-Sell,Retail,North America,Enterprise,Inbound,61376
+deal_635,owner_10,2025-08-03,2025-08-29,Closed Won,Closed,Channel,New Business,New Client,Finance,LATAM,Enterprise,Marketing Event,19231
+deal_669,owner_10,2024-08-22,2024-09-15,Prospecting,Pipeline,Channel,New Business,New Client,Tech,LATAM,Enterprise,Outbound,127391
+deal_689,owner_10,2024-04-19,2024-07-20,Proposal,Best Case,Direct,New Business,New Client,Retail,North America,Enterprise,Marketing Event,104807
+deal_697,owner_10,2024-11-17,2024-12-04,Proposal,Best Case,Channel,New Business,New Client,Retail,North America,Enterprise,Inbound,124872
+deal_5,owner_11,2024-10-12,2025-04-10,Proposal,Best Case,Direct,Existing Business,Cross-Sell,Finance,North America,Enterprise,Partner,68041
+deal_13,owner_11,2024-01-22,2024-04-12,Negotiation,Best Case,Channel,New Business,New Client,Retail,LATAM,Enterprise,Marketing Event,131989
+deal_25,owner_11,2024-05-05,2024-05-24,Qualification,Pipeline,Channel,Existing Business,Cross-Sell,Healthcare,LATAM,Enterprise,Marketing Event,56863
+deal_89,owner_11,2024-04-21,2024-05-24,Qualification,Pipeline,Direct,Existing Business,Cross-Sell,Healthcare,North America,Enterprise,Partner,45416
+deal_114,owner_11,2024-10-17,2025-01-30,Closed Lost,Closed,Channel,New Business,New Client,Retail,North America,Enterprise,Outbound,239748
+deal_132,owner_4,2025-05-02,2025-08-28,Negotiation,Commit,Channel,New Business,New Client,Healthcare,EMEA,SMB,Partner,34575
+deal_167,owner_11,2024-02-13,2024-03-19,Qualification,Pipeline,Direct,New Business,New Client,Tech,LATAM,Enterprise,Outbound,131154
+deal_185,owner_11,2024-03-14,2024-07-12,Proposal,Best Case,Channel,New Business,New Client,Healthcare,North America,Enterprise,Outbound,65242
+deal_216,owner_11,2024-02-01,2024-06-30,Closed Lost,Closed,Direct,Existing Business,Upsell,Tech,North America,Enterprise,Referral,101506
+deal_239,owner_11,2024-06-16,2024-11-23,Prospecting,Pipeline,Direct,New Business,New Client,Healthcare,EMEA,Enterprise,Inbound,80167
+deal_261,owner_11,2024-12-06,2025-01-17,Proposal,Best Case,Channel,New Business,New Client,Retail,EMEA,Enterprise,Inbound,136462
+deal_277,owner_11,2024-09-08,2024-11-05,Prospecting,Pipeline,Channel,Existing Business,Cross-Sell,Healthcare,LATAM,Enterprise,Referral,49548
+deal_320,owner_11,2024-10-10,2025-02-01,Qualification,Pipeline,Direct,Existing Business,Cross-Sell,Retail,EMEA,Enterprise,Partner,41564
+deal_330,owner_11,2024-06-03,2024-09-14,Closed Lost,Closed,Direct,New Business,New Client,Retail,LATAM,Enterprise,Marketing Event,14009
+deal_336,owner_11,2024-02-29,2024-04-29,Qualification,Pipeline,Channel,New Business,New Client,Healthcare,North America,Enterprise,Inbound,114634
+deal_341,owner_11,2024-02-10,2024-03-09,Prospecting,Pipeline,Channel,Existing Business,Cross-Sell,Finance,North America,Enterprise,Outbound,50066
+deal_352,owner_11,2025-03-10,2025-06-11,Proposal,Best Case,Channel,Existing Business,Upsell,Tech,EMEA,Enterprise,Outbound,58724
+deal_158,owner_6,2024-06-28,2024-07-09,Negotiation,Commit,Channel,New Business,New Client,Retail,LATAM,Mid-Market,Inbound,61092
+deal_164,owner_7,2025-05-08,2025-09-04,Negotiation,Commit,Direct,New Business,New Client,Retail,EMEA,Mid-Market,Marketing Event,52052
+deal_373,owner_11,2024-03-31,2024-08-13,Closed Won,Closed,Direct,Existing Business,Upsell,Healthcare,North America,Enterprise,Marketing Event,101758
+deal_383,owner_11,2024-07-14,2024-12-10,Closed Won,Closed,Direct,Existing Business,Cross-Sell,Finance,LATAM,Enterprise,Inbound,63719
+deal_166,owner_9,2024-03-26,2024-08-16,Negotiation,Commit,Direct,Existing Business,Upsell,Healthcare,EMEA,Mid-Market,Marketing Event,29339
+deal_402,owner_11,2025-01-31,2025-04-19,Closed Lost,Closed,Direct,New Business,New Client,Retail,EMEA,Enterprise,Partner,101779
+deal_403,owner_11,2024-03-14,2024-07-12,Closed Lost,Closed,Channel,Existing Business,Upsell,Retail,North America,Enterprise,Referral,56339
+deal_414,owner_11,2025-03-09,2025-07-16,Closed Lost,Closed,Channel,Existing Business,Upsell,Finance,North America,Enterprise,Marketing Event,63842
+deal_425,owner_11,2024-06-18,2024-07-06,Proposal,Best Case,Direct,New Business,New Client,Retail,LATAM,Enterprise,Partner,135971
+deal_458,owner_11,2024-10-13,2024-12-11,Prospecting,Pipeline,Direct,Existing Business,Upsell,Retail,LATAM,Enterprise,Inbound,34944
+deal_509,owner_11,2024-02-26,2024-05-03,Proposal,Best Case,Channel,New Business,New Client,Finance,LATAM,Enterprise,Partner,58998
+deal_533,owner_11,2024-09-18,2025-02-09,Closed Won,Closed,Direct,Existing Business,Cross-Sell,Tech,EMEA,Enterprise,Marketing Event,82000
+deal_551,owner_11,2024-06-30,2024-12-14,Prospecting,Pipeline,Channel,Existing Business,Upsell,Finance,North America,Enterprise,Marketing Event,40598
+deal_574,owner_11,2024-06-06,2024-08-10,Prospecting,Pipeline,Direct,New Business,New Client,Finance,LATAM,Enterprise,Inbound,72885
+deal_169,owner_12,2024-05-14,2024-08-16,Negotiation,Commit,Direct,New Business,New Client,Retail,EMEA,Strategic,Partner,143365
+deal_585,owner_11,2025-03-28,2025-04-25,Closed Lost,Closed,Channel,New Business,New Client,Retail,EMEA,Enterprise,Partner,263202
+deal_189,owner_13,2024-12-18,2025-06-15,Negotiation,Commit,Channel,Existing Business,Cross-Sell,Retail,EMEA,Strategic,Outbound,239019
+deal_601,owner_11,2024-11-10,2025-01-07,Qualification,Pipeline,Channel,New Business,New Client,Healthcare,North America,Enterprise,Partner,135126
+deal_622,owner_11,2025-08-03,2025-08-23,Qualification,Pipeline,Direct,New Business,New Client,Healthcare,EMEA,Enterprise,Outbound,120172
+deal_651,owner_11,2024-12-01,2025-01-03,Prospecting,Pipeline,Direct,New Business,New Client,Tech,North America,Enterprise,Outbound,123045
+deal_652,owner_11,2024-07-12,2025-01-06,Prospecting,Pipeline,Direct,New Business,New Client,Healthcare,EMEA,Enterprise,Partner,127733
+deal_656,owner_11,2024-01-19,2024-04-20,Prospecting,Pipeline,Direct,New Business,New Client,Finance,North America,Enterprise,Inbound,74190
+deal_27,owner_12,2025-08-25,2026-01-29,Qualification,Pipeline,Channel,Existing Business,Cross-Sell,Finance,EMEA,Strategic,Marketing Event,110298
+deal_69,owner_12,2024-06-19,2024-10-03,Proposal,Best Case,Channel,Existing Business,Cross-Sell,Finance,EMEA,Strategic,Marketing Event,74889
+deal_85,owner_12,2024-02-14,2024-07-03,Proposal,Best Case,Direct,Existing Business,Upsell,Tech,LATAM,Strategic,Inbound,91749
+deal_197,owner_4,2024-10-08,2024-10-29,Negotiation,Commit,Direct,New Business,New Client,Retail,EMEA,SMB,Referral,45727
+deal_211,owner_5,2024-01-02,2024-02-17,Negotiation,Commit,Direct,Existing Business,Upsell,Tech,EMEA,SMB,Partner,24549
+deal_121,owner_12,2025-04-16,2025-06-19,Proposal,Best Case,Direct,New Business,New Client,Healthcare,North America,Strategic,Marketing Event,119529
+deal_218,owner_9,2024-11-25,2025-04-18,Negotiation,Commit,Channel,Existing Business,Cross-Sell,Tech,North America,Mid-Market,Partner,16250
+deal_136,owner_12,2024-11-22,2025-01-30,Qualification,Pipeline,Channel,New Business,New Client,Retail,EMEA,Strategic,Inbound,113401
+deal_151,owner_12,2025-04-15,2025-09-29,Closed Won,Closed,Channel,Existing Business,Upsell,Finance,LATAM,Strategic,Partner,221916
+deal_221,owner_12,2024-01-02,2024-04-07,Negotiation,Commit,Channel,New Business,New Client,Retail,LATAM,Strategic,Outbound,72027
+deal_170,owner_12,2024-10-26,2024-11-27,Closed Lost,Closed,Direct,New Business,New Client,Retail,EMEA,Strategic,Inbound,90437
+deal_181,owner_12,2024-07-13,2024-11-26,Prospecting,Pipeline,Direct,New Business,New Client,Retail,EMEA,Strategic,Inbound,149214
+deal_186,owner_12,2024-09-02,2024-10-16,Prospecting,Pipeline,Channel,Existing Business,Upsell,Tech,LATAM,Strategic,Inbound,163068
+deal_187,owner_12,2024-09-15,2024-10-11,Negotiation,Best Case,Direct,Existing Business,Cross-Sell,Finance,North America,Strategic,Marketing Event,285821
+deal_191,owner_12,2025-01-28,2025-07-08,Closed Won,Closed,Direct,New Business,New Client,Healthcare,LATAM,Strategic,Referral,109775
+deal_203,owner_12,2024-08-23,2025-02-14,Prospecting,Pipeline,Channel,Existing Business,Cross-Sell,Tech,EMEA,Strategic,Partner,164955
+deal_223,owner_6,2025-05-04,2025-10-14,Negotiation,Commit,Direct,Existing Business,Upsell,Healthcare,North America,Mid-Market,Referral,14112
+deal_256,owner_12,2024-05-10,2024-06-02,Closed Lost,Closed,Channel,New Business,New Client,Retail,North America,Strategic,Inbound,110364
+deal_260,owner_12,2024-03-13,2024-09-01,Qualification,Pipeline,Channel,Existing Business,Cross-Sell,Finance,North America,Strategic,Partner,137708
+deal_295,owner_12,2024-02-05,2024-04-11,Proposal,Best Case,Channel,Existing Business,Cross-Sell,Tech,LATAM,Strategic,Referral,105345
+deal_311,owner_12,2024-04-24,2024-09-03,Closed Lost,Closed,Direct,New Business,New Client,Finance,EMEA,Strategic,Partner,68686
+deal_316,owner_12,2024-11-12,2025-02-22,Qualification,Pipeline,Channel,Existing Business,Cross-Sell,Retail,LATAM,Strategic,Marketing Event,235268
+deal_229,owner_4,2025-01-26,2025-05-04,Proposal,Commit,Channel,New Business,New Client,Retail,North America,SMB,Referral,50158
+deal_324,owner_12,2025-05-01,2025-08-27,Qualification,Pipeline,Direct,Existing Business,Upsell,Healthcare,EMEA,Strategic,Outbound,125745
+deal_337,owner_12,2024-03-15,2024-06-28,Proposal,Best Case,Direct,New Business,New Client,Finance,LATAM,Strategic,Outbound,131052
+deal_347,owner_12,2024-05-23,2024-10-04,Prospecting,Pipeline,Direct,New Business,New Client,Retail,EMEA,Strategic,Outbound,117846
+deal_351,owner_12,2025-05-07,2025-06-13,Negotiation,Best Case,Channel,New Business,New Client,Retail,LATAM,Strategic,Partner,89868
+deal_353,owner_12,2024-10-30,2025-02-15,Qualification,Pipeline,Channel,New Business,New Client,Retail,LATAM,Strategic,Outbound,71045
+deal_247,owner_7,2024-12-01,2025-05-08,Negotiation,Commit,Direct,New Business,New Client,Healthcare,North America,Mid-Market,Marketing Event,68438
+deal_379,owner_12,2024-06-09,2024-07-27,Qualification,Pipeline,Direct,New Business,New Client,Finance,EMEA,Strategic,Referral,105690
+deal_408,owner_12,2025-04-22,2025-08-03,Qualification,Pipeline,Direct,New Business,New Client,Tech,North America,Strategic,Marketing Event,87538
+deal_430,owner_12,2024-03-07,2024-05-14,Qualification,Pipeline,Channel,Existing Business,Cross-Sell,Finance,LATAM,Strategic,Marketing Event,118240
+deal_434,owner_12,2025-04-05,2025-09-02,Negotiation,Best Case,Channel,New Business,New Client,Tech,North America,Strategic,Inbound,137287
+deal_436,owner_12,2024-03-06,2024-04-01,Closed Won,Closed,Direct,New Business,New Client,Finance,LATAM,Strategic,Inbound,115988
+deal_440,owner_12,2024-06-26,2024-07-10,Negotiation,Best Case,Direct,Existing Business,Cross-Sell,Healthcare,LATAM,Strategic,Partner,21192
+deal_448,owner_12,2024-02-23,2024-06-08,Closed Lost,Closed,Direct,New Business,New Client,Healthcare,North America,Strategic,Partner,37246
+deal_449,owner_12,2025-08-18,2026-01-09,Prospecting,Pipeline,Channel,New Business,New Client,Finance,North America,Strategic,Partner,103920
+deal_462,owner_12,2024-05-11,2024-09-02,Proposal,Best Case,Direct,Existing Business,Upsell,Finance,North America,Strategic,Partner,226276
+deal_469,owner_12,2024-01-18,2024-04-23,Negotiation,Best Case,Direct,New Business,New Client,Finance,LATAM,Strategic,Outbound,111511
+deal_473,owner_12,2025-02-05,2025-04-21,Negotiation,Best Case,Channel,New Business,New Client,Healthcare,North America,Strategic,Marketing Event,123595
+deal_503,owner_12,2025-03-13,2025-08-03,Closed Won,Closed,Channel,Existing Business,Cross-Sell,Finance,North America,Strategic,Inbound,27834
+deal_512,owner_12,2024-07-15,2024-08-26,Closed Lost,Closed,Channel,New Business,New Client,Tech,LATAM,Strategic,Outbound,283967
+deal_515,owner_12,2024-12-02,2025-01-29,Qualification,Pipeline,Direct,Existing Business,Cross-Sell,Finance,LATAM,Strategic,Referral,67552
+deal_517,owner_12,2025-08-20,2025-10-23,Qualification,Pipeline,Channel,Existing Business,Cross-Sell,Healthcare,North America,Strategic,Marketing Event,19798
+deal_528,owner_12,2024-02-12,2024-03-07,Closed Lost,Closed,Direct,New Business,New Client,Finance,LATAM,Strategic,Referral,117109
+deal_532,owner_12,2025-08-21,2025-09-21,Proposal,Best Case,Direct,Existing Business,Cross-Sell,Healthcare,North America,Strategic,Partner,188159
+deal_536,owner_12,2024-12-15,2025-01-22,Closed Won,Closed,Channel,Existing Business,Cross-Sell,Retail,EMEA,Strategic,Inbound,80500
+deal_552,owner_12,2025-05-01,2025-06-25,Proposal,Best Case,Direct,Existing Business,Upsell,Retail,EMEA,Strategic,Marketing Event,71061
+deal_270,owner_9,2025-04-25,2025-10-15,Negotiation,Commit,Direct,New Business,New Client,Retail,EMEA,Mid-Market,Partner,34351
+deal_579,owner_12,2025-04-22,2025-06-20,Prospecting,Pipeline,Channel,New Business,New Client,Tech,EMEA,Strategic,Inbound,85725
+deal_592,owner_12,2024-03-01,2024-08-08,Qualification,Pipeline,Channel,Existing Business,Cross-Sell,Tech,LATAM,Strategic,Outbound,118774
+deal_279,owner_13,2024-04-21,2024-06-02,Negotiation,Commit,Channel,New Business,New Client,Finance,EMEA,Strategic,Marketing Event,115193
+deal_597,owner_12,2024-03-27,2024-05-04,Prospecting,Pipeline,Direct,New Business,New Client,Tech,North America,Strategic,Marketing Event,130752
+deal_630,owner_12,2024-11-17,2025-04-30,Proposal,Best Case,Direct,New Business,New Client,Healthcare,LATAM,Strategic,Marketing Event,134711
+deal_638,owner_12,2024-03-05,2024-04-02,Closed Won,Closed,Channel,Existing Business,Upsell,Healthcare,LATAM,Strategic,Marketing Event,97596
+deal_282,owner_3,2024-08-14,2024-09-10,Negotiation,Commit,Direct,New Business,New Client,Tech,North America,SMB,Inbound,29211
+deal_298,owner_13,2024-05-04,2024-07-02,Negotiation,Commit,Channel,New Business,New Client,Retail,EMEA,Strategic,Marketing Event,62680
+deal_663,owner_12,2025-02-16,2025-05-21,Qualification,Pipeline,Channel,Existing Business,Upsell,Retail,LATAM,Strategic,Referral,473986
+deal_665,owner_12,2024-02-16,2024-07-05,Prospecting,Pipeline,Channel,Existing Business,Upsell,Retail,EMEA,Strategic,Inbound,89514
+deal_681,owner_12,2025-04-15,2025-05-19,Prospecting,Pipeline,Direct,New Business,New Client,Finance,EMEA,Strategic,Marketing Event,142580
+deal_682,owner_12,2024-04-10,2024-06-19,Closed Won,Closed,Channel,Existing Business,Upsell,Healthcare,North America,Strategic,Inbound,50783
+deal_684,owner_12,2025-08-16,2025-10-08,Qualification,Pipeline,Channel,New Business,New Client,Retail,North America,Strategic,Partner,105799
+deal_6,owner_13,2024-07-05,2024-07-15,Closed Won,Closed,Direct,Existing Business,Cross-Sell,Tech,EMEA,Strategic,Inbound,27817
+deal_12,owner_13,2025-01-21,2025-03-21,Prospecting,Pipeline,Direct,New Business,New Client,Retail,North America,Strategic,Marketing Event,116643
+deal_18,owner_13,2025-04-10,2025-06-04,Qualification,Pipeline,Direct,New Business,New Client,Retail,EMEA,Strategic,Marketing Event,95471
+deal_35,owner_13,2025-01-30,2025-07-28,Closed Won,Closed,Direct,Existing Business,Cross-Sell,Finance,LATAM,Strategic,Partner,197965
+deal_37,owner_13,2025-03-20,2025-05-01,Closed Won,Closed,Channel,New Business,New Client,Healthcare,EMEA,Strategic,Partner,270189
+deal_68,owner_13,2024-06-11,2024-07-10,Prospecting,Pipeline,Channel,Existing Business,Cross-Sell,Healthcare,EMEA,Strategic,Inbound,58613
+deal_101,owner_13,2024-02-09,2024-07-03,Closed Won,Closed,Direct,Existing Business,Cross-Sell,Finance,North America,Strategic,Marketing Event,234016
+deal_120,owner_13,2024-11-13,2025-02-05,Proposal,Best Case,Direct,New Business,New Client,Tech,LATAM,Strategic,Partner,120342
+deal_143,owner_13,2025-01-09,2025-06-05,Proposal,Best Case,Channel,Existing Business,Upsell,Tech,North America,Strategic,Outbound,159708
+deal_160,owner_13,2024-11-25,2025-01-29,Proposal,Best Case,Direct,Existing Business,Cross-Sell,Retail,LATAM,Strategic,Referral,58202
+deal_168,owner_13,2025-04-17,2025-05-30,Closed Won,Closed,Channel,Existing Business,Cross-Sell,Retail,North America,Strategic,Outbound,243554
+deal_172,owner_13,2025-04-17,2025-05-28,Prospecting,Pipeline,Channel,Existing Business,Cross-Sell,Retail,LATAM,Strategic,Partner,48944
+deal_179,owner_13,2024-05-08,2024-09-18,Closed Lost,Closed,Direct,Existing Business,Cross-Sell,Tech,LATAM,Strategic,Outbound,67319
+deal_180,owner_13,2024-07-01,2024-11-30,Prospecting,Pipeline,Channel,Existing Business,Cross-Sell,Retail,EMEA,Strategic,Referral,155130
+deal_317,owner_12,2024-02-08,2024-04-23,Negotiation,Commit,Direct,New Business,New Client,Retail,LATAM,Strategic,Inbound,148458
+deal_209,owner_13,2024-02-11,2024-06-15,Closed Won,Closed,Direct,New Business,New Client,Healthcare,North America,Strategic,Partner,262626
+deal_212,owner_13,2024-11-12,2025-02-09,Qualification,Pipeline,Channel,Existing Business,Cross-Sell,Finance,EMEA,Strategic,Referral,70244
+deal_220,owner_13,2024-12-03,2025-05-05,Qualification,Pipeline,Channel,Existing Business,Upsell,Healthcare,EMEA,Strategic,Inbound,247504
+deal_227,owner_13,2025-03-09,2025-05-03,Qualification,Pipeline,Direct,New Business,New Client,Healthcare,EMEA,Strategic,Partner,65726
+deal_241,owner_13,2024-07-21,2024-12-18,Qualification,Best Case,Channel,New Business,New Client,Tech,LATAM,Strategic,Marketing Event,134776
+deal_254,owner_13,2024-02-08,2024-07-27,Qualification,Pipeline,Direct,New Business,New Client,Retail,EMEA,Strategic,Partner,125436
+deal_257,owner_13,2024-10-09,2024-11-11,Prospecting,Pipeline,Channel,Existing Business,Upsell,Retail,EMEA,Strategic,Marketing Event,101389
+deal_266,owner_13,2024-04-09,2024-05-15,Closed Lost,Closed,Channel,New Business,New Client,Tech,LATAM,Strategic,Marketing Event,116651
+deal_339,owner_1,2024-11-01,2024-12-23,Negotiation,Commit,Direct,Existing Business,Upsell,Retail,LATAM,SMB,Outbound,14001
+deal_280,owner_13,2025-03-08,2025-06-11,Closed Lost,Closed,Direct,New Business,New Client,Finance,North America,Strategic,Outbound,39409
+deal_291,owner_13,2024-05-09,2024-05-19,Proposal,Best Case,Direct,Existing Business,Upsell,Retail,North America,Strategic,Inbound,71225
+deal_294,owner_13,2025-03-07,2025-06-02,Proposal,Best Case,Direct,Existing Business,Upsell,Retail,LATAM,Strategic,Marketing Event,97152
+deal_296,owner_13,2024-10-28,2025-01-25,Closed Lost,Closed,Channel,New Business,New Client,Finance,EMEA,Strategic,Outbound,54979
+deal_297,owner_13,2024-12-30,2025-03-26,Qualification,Pipeline,Channel,Existing Business,Upsell,Tech,LATAM,Strategic,Referral,30472
+deal_340,owner_6,2025-02-25,2025-04-28,Negotiation,Commit,Direct,Existing Business,Cross-Sell,Retail,LATAM,Mid-Market,Outbound,23724
+deal_305,owner_13,2024-09-04,2024-12-12,Closed Lost,Closed,Channel,New Business,New Client,Finance,North America,Strategic,Marketing Event,54091
+deal_306,owner_13,2024-03-30,2024-06-16,Closed Won,Closed,Channel,Existing Business,Upsell,Healthcare,North America,Strategic,Partner,99843
+deal_307,owner_13,2024-03-29,2024-05-28,Proposal,Best Case,Direct,Existing Business,Cross-Sell,Healthcare,LATAM,Strategic,Referral,40318
+deal_323,owner_13,2024-02-08,2024-05-05,Proposal,Best Case,Direct,New Business,New Client,Tech,LATAM,Strategic,Partner,67276
+deal_332,owner_13,2024-04-26,2024-06-03,Proposal,Best Case,Direct,New Business,New Client,Tech,North America,Strategic,Marketing Event,88924
+deal_356,owner_13,2024-01-12,2024-03-03,Closed Won,Closed,Direct,Existing Business,Cross-Sell,Retail,North America,Strategic,Referral,37699
+deal_350,owner_2,2024-01-18,2024-05-24,Negotiation,Commit,Direct,Existing Business,Cross-Sell,Finance,LATAM,SMB,Marketing Event,25343
+deal_391,owner_13,2024-02-07,2024-04-20,Closed Lost,Closed,Channel,New Business,New Client,Tech,North America,Strategic,Partner,21104
+deal_409,owner_13,2024-02-15,2024-04-21,Proposal,Best Case,Channel,New Business,New Client,Finance,LATAM,Strategic,Inbound,74484
+deal_441,owner_13,2025-02-28,2025-05-16,Prospecting,Pipeline,Channel,New Business,New Client,Tech,LATAM,Strategic,Partner,94301
+deal_464,owner_13,2024-05-03,2024-10-26,Prospecting,Pipeline,Direct,Existing Business,Cross-Sell,Tech,EMEA,Strategic,Referral,18968
+deal_468,owner_13,2025-02-12,2025-08-11,Closed Lost,Closed,Channel,New Business,New Client,Finance,EMEA,Strategic,Outbound,46539
+deal_493,owner_13,2024-04-02,2024-08-21,Closed Lost,Closed,Direct,New Business,New Client,Tech,North America,Strategic,Partner,54922
+deal_495,owner_13,2025-05-06,2025-10-15,Prospecting,Pipeline,Direct,New Business,New Client,Healthcare,LATAM,Strategic,Outbound,110521
+deal_519,owner_13,2025-08-24,2026-01-06,Closed Lost,Closed,Channel,New Business,New Client,Healthcare,North America,Strategic,Marketing Event,152943
+deal_523,owner_13,2024-12-31,2025-01-16,Closed Won,Closed,Channel,Existing Business,Upsell,Healthcare,North America,Strategic,Outbound,102924
+deal_529,owner_13,2024-03-16,2024-06-21,Qualification,Pipeline,Direct,New Business,New Client,Finance,LATAM,Strategic,Marketing Event,118862
+deal_531,owner_13,2024-10-06,2024-12-01,Proposal,Best Case,Channel,New Business,New Client,Finance,LATAM,Strategic,Partner,142541
+deal_538,owner_13,2024-10-22,2024-12-19,Qualification,Pipeline,Direct,New Business,New Client,Healthcare,LATAM,Strategic,Referral,109647
+deal_557,owner_13,2024-03-09,2024-08-08,Prospecting,Pipeline,Channel,Existing Business,Upsell,Healthcare,North America,Strategic,Partner,59964
+deal_559,owner_13,2025-03-18,2025-08-13,Prospecting,Pipeline,Direct,Existing Business,Cross-Sell,Healthcare,North America,Strategic,Outbound,113070
+deal_355,owner_5,2024-01-17,2024-07-10,Negotiation,Commit,Direct,Existing Business,Upsell,Healthcare,EMEA,SMB,Inbound,26861
+deal_587,owner_13,2024-09-01,2024-12-05,Negotiation,Best Case,Direct,New Business,New Client,Retail,EMEA,Strategic,Inbound,78203
+deal_594,owner_13,2024-01-14,2024-03-06,Closed Won,Closed,Channel,New Business,New Client,Retail,LATAM,Strategic,Marketing Event,200845
+deal_611,owner_13,2024-08-30,2024-10-22,Prospecting,Pipeline,Direct,Existing Business,Cross-Sell,Retail,North America,Strategic,Marketing Event,117502
+deal_625,owner_13,2024-05-03,2024-07-04,Closed Lost,Closed,Direct,New Business,New Client,Tech,LATAM,Strategic,Outbound,50727
+deal_628,owner_13,2025-08-07,2025-11-11,Prospecting,Pipeline,Channel,Existing Business,Upsell,Tech,EMEA,Strategic,Marketing Event,184133
+deal_361,owner_6,2024-10-19,2024-11-23,Negotiation,Commit,Channel,Existing Business,Cross-Sell,Retail,LATAM,Mid-Market,Partner,25021
+deal_649,owner_13,2024-12-14,2024-12-24,Prospecting,Pipeline,Channel,New Business,New Client,Healthcare,EMEA,Strategic,Marketing Event,110040
+deal_666,owner_13,2025-04-24,2025-10-20,Closed Lost,Closed,Channel,Existing Business,Upsell,Retail,EMEA,Strategic,Outbound,108671
+deal_667,owner_13,2025-01-20,2025-03-12,Prospecting,Pipeline,Direct,Existing Business,Upsell,Tech,North America,Strategic,Referral,97515
+deal_2,owner_2,2024-11-23,2025-02-09,Closed Won,Closed,Channel,New Business,New Client,Tech,North America,SMB,Marketing Event,37000
+deal_9,owner_2,2025-03-02,2025-04-06,Prospecting,Pipeline,Channel,New Business,New Client,Finance,LATAM,SMB,Inbound,57360
+deal_11,owner_2,2025-08-18,2025-11-17,Prospecting,Pipeline,Channel,New Business,New Client,Retail,LATAM,SMB,Inbound,22145
+deal_30,owner_2,2024-09-30,2025-03-22,Proposal,Best Case,Direct,New Business,New Client,Tech,North America,SMB,Referral,37502
+deal_368,owner_11,2024-04-19,2024-07-29,Negotiation,Commit,Channel,Existing Business,Cross-Sell,Tech,EMEA,Enterprise,Inbound,42580
+deal_55,owner_2,2024-01-01,2024-01-24,Prospecting,Pipeline,Channel,New Business,New Client,Tech,LATAM,SMB,Referral,50634
+deal_61,owner_2,2024-11-14,2025-01-31,Prospecting,Pipeline,Direct,Existing Business,Cross-Sell,Retail,LATAM,SMB,Partner,22651
+deal_369,owner_1,2024-12-12,2025-03-12,Negotiation,Commit,Channel,New Business,New Client,Retail,EMEA,SMB,Marketing Event,35604
+deal_75,owner_2,2024-02-16,2024-06-12,Qualification,Pipeline,Channel,Existing Business,Cross-Sell,Retail,EMEA,SMB,Outbound,26239
+deal_97,owner_2,2024-12-10,2025-04-10,Closed Won,Closed,Channel,Existing Business,Upsell,Tech,LATAM,SMB,Outbound,81656
+deal_119,owner_2,2024-11-15,2025-03-21,Prospecting,Pipeline,Direct,New Business,New Client,Healthcare,LATAM,SMB,Marketing Event,56278
+deal_137,owner_2,2025-03-04,2025-07-07,Proposal,Best Case,Channel,New Business,New Client,Tech,EMEA,SMB,Marketing Event,19379
+deal_153,owner_2,2025-01-01,2025-03-09,Qualification,Pipeline,Channel,Existing Business,Cross-Sell,Retail,LATAM,SMB,Referral,23849
+deal_156,owner_2,2025-02-24,2025-08-10,Qualification,Pipeline,Channel,New Business,New Client,Finance,EMEA,SMB,Partner,16541
+deal_163,owner_2,2024-09-09,2025-01-18,Prospecting,Pipeline,Direct,Existing Business,Cross-Sell,Tech,EMEA,SMB,Outbound,21011
+deal_190,owner_2,2025-04-05,2025-06-04,Qualification,Pipeline,Direct,New Business,New Client,Tech,EMEA,SMB,Outbound,27663
+deal_195,owner_2,2025-03-07,2025-07-15,Closed Lost,Closed,Channel,Existing Business,Upsell,Tech,North America,SMB,Marketing Event,16645
+deal_196,owner_2,2025-03-03,2025-05-15,Prospecting,Pipeline,Direct,Existing Business,Upsell,Tech,LATAM,SMB,Marketing Event,24324
+deal_204,owner_2,2025-01-06,2025-04-22,Proposal,Best Case,Direct,Existing Business,Upsell,Finance,North America,SMB,Outbound,23648
+deal_210,owner_2,2024-11-30,2024-12-27,Qualification,Pipeline,Channel,Existing Business,Cross-Sell,Tech,EMEA,SMB,Outbound,23076
+deal_215,owner_2,2025-05-05,2025-10-28,Closed Won,Closed,Direct,New Business,New Client,Retail,LATAM,SMB,Marketing Event,59217
+deal_243,owner_2,2024-09-21,2025-01-05,Proposal,Best Case,Direct,New Business,New Client,Tech,LATAM,SMB,Partner,38409
+deal_258,owner_2,2025-03-27,2025-06-13,Closed Lost,Closed,Channel,New Business,New Client,Retail,EMEA,SMB,Referral,56694
+deal_259,owner_2,2025-02-07,2025-03-23,Closed Won,Closed,Direct,Existing Business,Upsell,Tech,EMEA,SMB,Marketing Event,42000
+deal_265,owner_2,2025-08-27,2025-12-13,Qualification,Pipeline,Channel,New Business,New Client,Retail,EMEA,SMB,Outbound,44467
+deal_269,owner_2,2025-03-17,2025-07-30,Negotiation,Best Case,Channel,Existing Business,Upsell,Tech,EMEA,SMB,Referral,20210
+deal_288,owner_2,2025-04-22,2025-09-27,Closed Lost,Closed,Channel,New Business,New Client,Tech,North America,SMB,Inbound,55800
+deal_290,owner_2,2024-11-11,2024-12-24,Closed Lost,Closed,Channel,Existing Business,Cross-Sell,Retail,EMEA,SMB,Referral,26768
+deal_302,owner_2,2024-07-16,2024-12-07,Closed Lost,Closed,Direct,Existing Business,Upsell,Finance,EMEA,SMB,Partner,29138
+deal_303,owner_2,2024-05-23,2024-08-04,Proposal,Best Case,Direct,Existing Business,Cross-Sell,Finance,EMEA,SMB,Referral,23090
+deal_370,owner_11,2025-02-24,2025-06-12,Negotiation,Commit,Direct,Existing Business,Cross-Sell,Tech,EMEA,Enterprise,Inbound,34633
+deal_363,owner_2,2024-04-09,2024-05-04,Proposal,Best Case,Channel,Existing Business,Cross-Sell,Tech,LATAM,SMB,Marketing Event,20021
+deal_364,owner_2,2024-08-28,2024-11-30,Negotiation,Best Case,Direct,Existing Business,Cross-Sell,Finance,North America,SMB,Outbound,19856
+deal_367,owner_2,2024-04-07,2024-08-16,Closed Won,Closed,Direct,New Business,New Client,Tech,North America,SMB,Outbound,50741
+deal_415,owner_2,2024-03-02,2024-07-31,Closed Won,Closed,Channel,Existing Business,Cross-Sell,Tech,North America,SMB,Inbound,72019
+deal_433,owner_2,2024-01-02,2024-01-24,Qualification,Pipeline,Direct,New Business,New Client,Retail,North America,SMB,Referral,36038
+deal_443,owner_2,2024-02-26,2024-04-09,Prospecting,Pipeline,Direct,Existing Business,Cross-Sell,Finance,LATAM,SMB,Outbound,26968
+deal_444,owner_2,2024-10-16,2025-01-13,Closed Won,Closed,Channel,Existing Business,Cross-Sell,Healthcare,LATAM,SMB,Referral,50400
+deal_454,owner_2,2025-08-20,2025-09-21,Qualification,Pipeline,Channel,New Business,New Client,Finance,LATAM,SMB,Inbound,25969
+deal_455,owner_2,2024-10-05,2025-02-02,Qualification,Pipeline,Direct,New Business,New Client,Healthcare,North America,SMB,Outbound,49589
+deal_474,owner_2,2024-08-12,2024-11-19,Proposal,Best Case,Channel,New Business,New Client,Retail,North America,SMB,Inbound,52605
+deal_482,owner_2,2024-03-06,2024-06-17,Closed Lost,Closed,Channel,New Business,New Client,Tech,North America,SMB,Outbound,46849
+deal_498,owner_2,2024-06-18,2024-11-09,Proposal,Best Case,Channel,Existing Business,Cross-Sell,Healthcare,EMEA,SMB,Referral,19870
+deal_510,owner_2,2024-09-12,2024-12-24,Proposal,Best Case,Channel,New Business,New Client,Tech,LATAM,SMB,Referral,37906
+deal_516,owner_2,2024-12-15,2025-04-07,Prospecting,Pipeline,Direct,New Business,New Client,Finance,EMEA,SMB,Referral,15567
+deal_524,owner_2,2025-03-02,2025-07-31,Closed Lost,Closed,Direct,New Business,New Client,Healthcare,EMEA,SMB,Marketing Event,50262
+deal_541,owner_2,2025-08-26,2025-11-15,Closed Won,Closed,Direct,New Business,New Client,Retail,LATAM,SMB,Marketing Event,46103
+deal_549,owner_2,2024-02-22,2024-07-07,Proposal,Best Case,Direct,Existing Business,Upsell,Tech,North America,SMB,Partner,17122
+deal_605,owner_2,2025-03-13,2025-04-26,Closed Won,Closed,Channel,Existing Business,Cross-Sell,Retail,EMEA,SMB,Referral,56287
+deal_375,owner_13,2024-10-13,2025-02-12,Negotiation,Commit,Channel,New Business,New Client,Finance,LATAM,Strategic,Marketing Event,76778
+deal_624,owner_2,2024-08-09,2024-11-01,Prospecting,Pipeline,Channel,New Business,New Client,Tech,EMEA,SMB,Partner,30948
+deal_670,owner_2,2024-11-11,2025-05-05,Qualification,Pipeline,Direct,New Business,New Client,Healthcare,EMEA,SMB,Inbound,59329
+deal_686,owner_2,2024-10-24,2024-11-29,Closed Won,Closed,Channel,Existing Business,Upsell,Tech,North America,SMB,Marketing Event,50864
+deal_14,owner_3,2024-03-30,2024-04-15,Closed Won,Closed,Direct,Existing Business,Upsell,Healthcare,EMEA,SMB,Marketing Event,52267
+deal_42,owner_3,2024-07-26,2024-11-04,Qualification,Pipeline,Direct,New Business,New Client,Retail,EMEA,SMB,Outbound,19062
+deal_70,owner_3,2024-10-27,2024-12-14,Closed Won,Closed,Channel,Existing Business,Upsell,Retail,LATAM,SMB,Outbound,42204
+deal_86,owner_3,2024-10-24,2024-11-15,Proposal,Best Case,Direct,New Business,New Client,Retail,North America,SMB,Marketing Event,23248
+deal_88,owner_3,2025-03-15,2025-05-18,Prospecting,Pipeline,Channel,Existing Business,Cross-Sell,Finance,EMEA,SMB,Marketing Event,30131
+deal_90,owner_3,2025-08-07,2025-10-04,Closed Lost,Closed,Channel,Existing Business,Cross-Sell,Finance,EMEA,SMB,Outbound,22784
+deal_117,owner_3,2025-08-07,2026-01-06,Closed Lost,Closed,Channel,Existing Business,Upsell,Finance,North America,SMB,Inbound,17450
+deal_129,owner_3,2024-05-18,2024-07-11,Proposal,Best Case,Direct,New Business,New Client,Tech,North America,SMB,Marketing Event,42211
+deal_139,owner_3,2024-01-19,2024-04-24,Closed Lost,Closed,Direct,Existing Business,Cross-Sell,Healthcare,EMEA,SMB,Referral,20986
+deal_144,owner_3,2024-06-20,2024-10-14,Qualification,Pipeline,Channel,Existing Business,Cross-Sell,Retail,North America,SMB,Outbound,19077
+deal_145,owner_3,2025-03-24,2025-04-12,Qualification,Pipeline,Direct,Existing Business,Upsell,Retail,EMEA,SMB,Partner,27116
+deal_148,owner_3,2025-04-28,2025-07-20,Closed Lost,Closed,Channel,Existing Business,Upsell,Finance,North America,SMB,Outbound,24664
+deal_183,owner_3,2024-09-30,2024-11-27,Qualification,Pipeline,Direct,Existing Business,Cross-Sell,Tech,North America,SMB,Outbound,30692
+deal_184,owner_3,2024-05-03,2024-10-24,Qualification,Pipeline,Direct,Existing Business,Cross-Sell,Healthcare,EMEA,SMB,Marketing Event,17485
+deal_217,owner_3,2024-07-25,2024-12-16,Closed Won,Closed,Channel,Existing Business,Upsell,Retail,LATAM,SMB,Referral,45930
+deal_228,owner_3,2024-03-12,2024-09-03,Closed Lost,Closed,Channel,Existing Business,Cross-Sell,Tech,LATAM,SMB,Outbound,15537
+deal_275,owner_3,2024-10-26,2025-03-22,Proposal,Best Case,Channel,New Business,New Client,Finance,LATAM,SMB,Partner,61563
+deal_378,owner_12,2025-04-03,2025-07-19,Negotiation,Commit,Direct,Existing Business,Cross-Sell,Finance,EMEA,Strategic,Inbound,197440
+deal_285,owner_3,2024-10-30,2024-12-14,Closed Lost,Closed,Direct,New Business,New Client,Healthcare,EMEA,SMB,Marketing Event,19558
+deal_314,owner_3,2024-12-06,2025-03-22,Closed Lost,Closed,Channel,Existing Business,Cross-Sell,Retail,North America,SMB,Marketing Event,31818
+deal_338,owner_3,2024-09-05,2024-12-14,Prospecting,Pipeline,Channel,Existing Business,Cross-Sell,Tech,North America,SMB,Marketing Event,19542
+deal_387,owner_3,2025-02-20,2025-07-16,Closed Won,Closed,Channel,New Business,New Client,Tech,North America,SMB,Marketing Event,81321
+deal_388,owner_9,2025-08-21,2026-01-26,Negotiation,Commit,Direct,Existing Business,Upsell,Finance,LATAM,Mid-Market,Referral,30196
+deal_413,owner_3,2024-08-15,2025-01-29,Prospecting,Pipeline,Channel,New Business,New Client,Tech,EMEA,SMB,Outbound,37246
+deal_432,owner_3,2025-02-19,2025-05-05,Qualification,Pipeline,Channel,New Business,New Client,Retail,North America,SMB,Marketing Event,55133
+deal_437,owner_3,2024-01-21,2024-03-25,Prospecting,Pipeline,Direct,Existing Business,Upsell,Retail,EMEA,SMB,Inbound,27059
+deal_456,owner_3,2024-03-28,2024-07-18,Prospecting,Pipeline,Direct,New Business,New Client,Retail,LATAM,SMB,Inbound,48562
+deal_463,owner_3,2025-04-23,2025-05-13,Prospecting,Pipeline,Channel,Existing Business,Cross-Sell,Tech,North America,SMB,Partner,28251
+deal_472,owner_3,2024-03-21,2024-07-24,Closed Lost,Closed,Channel,Existing Business,Upsell,Tech,North America,SMB,Referral,25543
+deal_485,owner_3,2024-06-08,2024-10-22,Closed Won,Closed,Direct,New Business,New Client,Retail,North America,SMB,Partner,45372
+deal_514,owner_3,2025-01-09,2025-02-18,Closed Lost,Closed,Direct,Existing Business,Cross-Sell,Tech,LATAM,SMB,Referral,29119
+deal_518,owner_3,2024-08-11,2024-11-07,Closed Won,Closed,Direct,New Business,New Client,Finance,EMEA,SMB,Inbound,71719
+deal_520,owner_3,2024-01-16,2024-05-02,Closed Lost,Closed,Direct,New Business,New Client,Finance,North America,SMB,Inbound,24191
+deal_527,owner_3,2024-01-18,2024-03-31,Closed Won,Closed,Direct,New Business,New Client,Retail,North America,SMB,Inbound,53910
+deal_569,owner_3,2024-03-31,2024-04-25,Qualification,Pipeline,Channel,Existing Business,Cross-Sell,Finance,LATAM,SMB,Partner,27842
+deal_575,owner_3,2024-11-06,2025-03-30,Closed Lost,Closed,Channel,Existing Business,Upsell,Retail,EMEA,SMB,Marketing Event,18281
+deal_584,owner_3,2025-01-07,2025-02-03,Closed Won,Closed,Direct,Existing Business,Upsell,Healthcare,North America,SMB,Partner,17000
+deal_596,owner_3,2024-01-02,2024-04-07,Qualification,Pipeline,Direct,Existing Business,Cross-Sell,Healthcare,LATAM,SMB,Referral,25106
+deal_39,owner_10,2024-05-03,2024-10-08,Negotiation,Commit,Direct,New Business,New Client,Retail,North America,Enterprise,Inbound,96044
+deal_643,owner_3,2024-12-17,2025-02-14,Qualification,Pipeline,Channel,New Business,New Client,Retail,North America,SMB,Outbound,49522
+deal_661,owner_3,2024-05-04,2024-09-29,Qualification,Pipeline,Direct,New Business,New Client,Healthcare,LATAM,SMB,Marketing Event,44244
+deal_393,owner_8,2025-08-15,2026-02-08,Negotiation,Commit,Channel,New Business,New Client,Finance,North America,Mid-Market,Partner,42217
+deal_672,owner_3,2024-08-11,2024-09-19,Closed Lost,Closed,Channel,Existing Business,Upsell,Finance,EMEA,SMB,Marketing Event,28344
+deal_673,owner_3,2024-08-21,2024-10-31,Qualification,Pipeline,Direct,New Business,New Client,Finance,LATAM,SMB,Referral,20622
+deal_676,owner_3,2025-01-07,2025-02-13,Closed Lost,Closed,Channel,Existing Business,Upsell,Healthcare,EMEA,SMB,Referral,25931
+deal_698,owner_3,2025-04-13,2025-08-26,Closed Lost,Closed,Channel,New Business,New Client,Tech,North America,SMB,Partner,71838
+deal_8,owner_4,2024-04-24,2024-10-14,Closed Won,Closed,Channel,Existing Business,Upsell,Retail,LATAM,SMB,Partner,45434
+deal_49,owner_4,2024-06-13,2024-09-16,Closed Won,Closed,Direct,Existing Business,Upsell,Retail,LATAM,SMB,Marketing Event,55155
+deal_59,owner_4,2024-09-29,2024-10-19,Proposal,Best Case,Direct,New Business,New Client,Finance,EMEA,SMB,Marketing Event,61709
+deal_62,owner_4,2025-05-06,2025-06-13,Closed Lost,Closed,Channel,New Business,New Client,Tech,North America,SMB,Partner,64649
+deal_66,owner_4,2024-06-03,2024-11-02,Qualification,Pipeline,Channel,Existing Business,Upsell,Retail,LATAM,SMB,Partner,26544
+deal_91,owner_4,2025-04-01,2025-07-28,Qualification,Pipeline,Channel,New Business,New Client,Tech,North America,SMB,Inbound,19327
+deal_109,owner_4,2025-08-01,2025-11-23,Prospecting,Pipeline,Direct,Existing Business,Upsell,Retail,EMEA,SMB,Marketing Event,20632
+deal_399,owner_1,2024-12-05,2025-03-12,Negotiation,Commit,Channel,Existing Business,Cross-Sell,Finance,EMEA,SMB,Outbound,31643
+deal_154,owner_4,2024-07-14,2024-10-06,Qualification,Pipeline,Channel,Existing Business,Cross-Sell,Finance,North America,SMB,Marketing Event,26536
+deal_165,owner_4,2024-09-11,2025-02-05,Prospecting,Pipeline,Direct,New Business,New Client,Finance,LATAM,SMB,Outbound,26495
+deal_4,owner_7,2024-11-15,2025-03-18,Negotiation,Commit,Direct,Existing Business,Cross-Sell,Tech,North America,Mid-Market,Partner,17085
+deal_202,owner_4,2024-03-31,2024-08-13,Negotiation,Best Case,Direct,New Business,New Client,Finance,North America,SMB,Inbound,36063
+deal_222,owner_4,2024-01-06,2024-04-03,Prospecting,Pipeline,Direct,Existing Business,Upsell,Tech,North America,SMB,Partner,17349
+deal_40,owner_7,2025-01-14,2025-02-08,Negotiation,Commit,Direct,Existing Business,Upsell,Tech,EMEA,Mid-Market,Referral,20733
+deal_263,owner_4,2024-11-18,2025-05-10,Closed Lost,Closed,Direct,Existing Business,Cross-Sell,Retail,North America,SMB,Marketing Event,22152
+deal_292,owner_4,2024-07-05,2024-08-14,Proposal,Best Case,Direct,Existing Business,Cross-Sell,Tech,North America,SMB,Marketing Event,18591
+deal_313,owner_4,2025-04-28,2025-07-21,Negotiation,Best Case,Channel,Existing Business,Upsell,Retail,LATAM,SMB,Partner,28283
+deal_315,owner_4,2024-06-02,2024-11-21,Prospecting,Pipeline,Channel,Existing Business,Cross-Sell,Finance,LATAM,SMB,Inbound,18861
+deal_348,owner_4,2024-10-30,2024-12-27,Qualification,Pipeline,Direct,Existing Business,Upsell,Finance,EMEA,SMB,Partner,29621
+deal_359,owner_4,2024-08-11,2024-11-16,Proposal,Best Case,Channel,Existing Business,Cross-Sell,Healthcare,EMEA,SMB,Inbound,14600
+deal_374,owner_4,2024-08-29,2025-01-07,Prospecting,Pipeline,Channel,Existing Business,Cross-Sell,Tech,North America,SMB,Inbound,21761
+deal_389,owner_4,2024-01-26,2024-04-26,Proposal,Best Case,Direct,New Business,New Client,Retail,LATAM,SMB,Marketing Event,59953
+deal_394,owner_4,2024-12-12,2025-04-07,Prospecting,Pipeline,Channel,Existing Business,Cross-Sell,Retail,North America,SMB,Partner,19284
+deal_404,owner_4,2024-08-02,2024-09-10,Prospecting,Pipeline,Direct,Existing Business,Upsell,Finance,North America,SMB,Marketing Event,22125
+deal_412,owner_4,2025-04-14,2025-07-20,Proposal,Best Case,Channel,New Business,New Client,Healthcare,LATAM,SMB,Marketing Event,15575
+deal_451,owner_4,2024-06-01,2024-06-25,Closed Won,Closed,Channel,New Business,New Client,Finance,EMEA,SMB,Partner,55542
+deal_452,owner_4,2025-04-01,2025-06-26,Proposal,Best Case,Direct,New Business,New Client,Tech,EMEA,SMB,Marketing Event,55221
+deal_453,owner_4,2024-01-25,2024-02-27,Prospecting,Pipeline,Direct,Existing Business,Upsell,Healthcare,EMEA,SMB,Outbound,29185
+deal_459,owner_4,2024-06-17,2024-08-25,Proposal,Best Case,Direct,New Business,New Client,Finance,LATAM,SMB,Outbound,58203
+deal_467,owner_4,2024-10-18,2025-04-03,Proposal,Best Case,Direct,New Business,New Client,Tech,LATAM,SMB,Marketing Event,29554
+deal_470,owner_4,2024-12-27,2025-01-12,Closed Won,Closed,Direct,Existing Business,Cross-Sell,Finance,EMEA,SMB,Marketing Event,14700
+deal_478,owner_4,2025-04-10,2025-07-04,Closed Won,Closed,Direct,Existing Business,Cross-Sell,Tech,EMEA,SMB,Partner,64609
+deal_480,owner_4,2025-03-18,2025-04-27,Prospecting,Pipeline,Direct,Existing Business,Cross-Sell,Tech,LATAM,SMB,Partner,29388
+deal_496,owner_4,2024-12-26,2025-03-23,Prospecting,Pipeline,Direct,New Business,New Client,Healthcare,EMEA,SMB,Marketing Event,31035
+deal_508,owner_4,2025-02-24,2025-05-07,Qualification,Best Case,Direct,Existing Business,Cross-Sell,Healthcare,EMEA,SMB,Outbound,30493
+deal_537,owner_4,2024-12-26,2025-01-16,Closed Won,Closed,Direct,Existing Business,Upsell,Tech,North America,SMB,Referral,27000
+deal_542,owner_4,2024-06-23,2024-07-27,Closed Lost,Closed,Channel,New Business,New Client,Finance,EMEA,SMB,Marketing Event,47709
+deal_400,owner_11,2024-08-10,2024-11-07,Negotiation,Commit,Direct,New Business,New Client,Healthcare,North America,Enterprise,Inbound,133129
+deal_553,owner_4,2024-11-01,2024-11-18,Closed Lost,Closed,Channel,New Business,New Client,Healthcare,EMEA,SMB,Inbound,38564
+deal_588,owner_4,2024-06-12,2024-11-09,Closed Won,Closed,Channel,New Business,New Client,Tech,North America,SMB,Inbound,43318
+deal_608,owner_4,2025-02-17,2025-04-21,Negotiation,Best Case,Direct,Existing Business,Cross-Sell,Tech,EMEA,SMB,Inbound,25559
+deal_617,owner_4,2024-02-05,2024-03-13,Prospecting,Pipeline,Channel,New Business,New Client,Finance,LATAM,SMB,Inbound,47831
+deal_632,owner_4,2024-08-12,2025-02-04,Proposal,Best Case,Direct,Existing Business,Cross-Sell,Finance,LATAM,SMB,Inbound,17425
+deal_634,owner_4,2025-02-13,2025-07-30,Closed Lost,Closed,Direct,New Business,New Client,Retail,LATAM,SMB,Referral,61830
+deal_644,owner_4,2024-05-15,2024-11-09,Qualification,Pipeline,Direct,Existing Business,Cross-Sell,Tech,LATAM,SMB,Referral,18595
+deal_655,owner_4,2024-10-31,2024-11-12,Prospecting,Pipeline,Direct,New Business,New Client,Retail,LATAM,SMB,Inbound,31029
+deal_405,owner_9,2025-02-11,2025-06-25,Negotiation,Commit,Direct,Existing Business,Cross-Sell,Tech,EMEA,Mid-Market,Inbound,17847
+deal_662,owner_4,2024-06-09,2024-07-27,Proposal,Best Case,Channel,New Business,New Client,Retail,LATAM,SMB,Inbound,41697
+deal_407,owner_3,2024-07-25,2024-10-10,Negotiation,Commit,Channel,Existing Business,Cross-Sell,Tech,LATAM,SMB,Referral,25445
+deal_685,owner_4,2024-10-19,2024-12-17,Closed Lost,Closed,Channel,New Business,New Client,Finance,North America,SMB,Marketing Event,36150
+deal_688,owner_4,2025-02-14,2025-06-11,Prospecting,Pipeline,Direct,Existing Business,Upsell,Healthcare,North America,SMB,Referral,30881
+deal_692,owner_4,2024-11-18,2025-01-15,Negotiation,Best Case,Channel,New Business,New Client,Healthcare,LATAM,SMB,Referral,58566
+deal_699,owner_4,2024-03-29,2024-07-13,Closed Won,Closed,Direct,New Business,New Client,Retail,LATAM,SMB,Referral,80696
+deal_19,owner_5,2025-02-16,2025-04-26,Qualification,Pipeline,Direct,New Business,New Client,Tech,North America,SMB,Outbound,49249
+deal_22,owner_5,2025-04-01,2025-06-10,Prospecting,Pipeline,Channel,Existing Business,Upsell,Retail,North America,SMB,Outbound,17386
+deal_26,owner_5,2024-12-11,2025-05-01,Closed Lost,Closed,Direct,Existing Business,Upsell,Finance,LATAM,SMB,Outbound,30261
+deal_28,owner_5,2025-02-22,2025-04-02,Proposal,Best Case,Channel,Existing Business,Upsell,Healthcare,North America,SMB,Inbound,23660
+deal_38,owner_5,2024-04-12,2024-08-03,Negotiation,Best Case,Channel,New Business,New Client,Healthcare,EMEA,SMB,Inbound,18986
+deal_44,owner_5,2024-09-22,2025-03-14,Closed Won,Closed,Channel,Existing Business,Cross-Sell,Tech,LATAM,SMB,Referral,13500
+deal_46,owner_5,2024-12-27,2025-01-16,Prospecting,Pipeline,Direct,New Business,New Client,Retail,LATAM,SMB,Outbound,57271
+deal_47,owner_5,2024-08-16,2025-01-24,Closed Lost,Closed,Channel,New Business,New Client,Tech,LATAM,SMB,Marketing Event,14266
+deal_53,owner_5,2024-07-20,2024-08-02,Closed Lost,Closed,Channel,New Business,New Client,Finance,LATAM,SMB,Marketing Event,21884
+deal_95,owner_5,2025-05-07,2025-10-07,Closed Lost,Closed,Channel,New Business,New Client,Tech,LATAM,SMB,Outbound,37497
+deal_96,owner_5,2025-01-26,2025-03-18,Closed Lost,Closed,Direct,New Business,New Client,Healthcare,LATAM,SMB,Marketing Event,38931
+deal_98,owner_5,2025-01-25,2025-06-26,Closed Lost,Closed,Direct,Existing Business,Cross-Sell,Healthcare,North America,SMB,Outbound,31727
+deal_122,owner_5,2024-04-16,2024-09-30,Prospecting,Pipeline,Channel,New Business,New Client,Healthcare,EMEA,SMB,Partner,42466
+deal_135,owner_5,2024-09-25,2025-01-04,Negotiation,Best Case,Channel,New Business,New Client,Healthcare,EMEA,SMB,Marketing Event,40663
+deal_138,owner_5,2024-05-12,2024-07-02,Prospecting,Pipeline,Channel,Existing Business,Cross-Sell,Healthcare,North America,SMB,Partner,31754
+deal_149,owner_5,2025-02-13,2025-06-16,Proposal,Best Case,Direct,Existing Business,Cross-Sell,Tech,EMEA,SMB,Referral,25450
+deal_173,owner_5,2024-08-12,2024-12-22,Closed Lost,Closed,Direct,Existing Business,Upsell,Retail,EMEA,SMB,Marketing Event,19341
+deal_177,owner_5,2025-08-19,2025-09-10,Proposal,Best Case,Direct,New Business,New Client,Retail,LATAM,SMB,Referral,61704
+deal_182,owner_5,2024-09-22,2024-12-15,Qualification,Pipeline,Channel,Existing Business,Cross-Sell,Retail,North America,SMB,Partner,14476
+deal_188,owner_5,2024-06-26,2024-11-28,Qualification,Pipeline,Channel,Existing Business,Cross-Sell,Tech,LATAM,SMB,Partner,16323
+deal_192,owner_5,2025-08-12,2025-10-22,Qualification,Pipeline,Channel,Existing Business,Upsell,Retail,EMEA,SMB,Marketing Event,15646
+deal_41,owner_8,2025-01-17,2025-06-09,Negotiation,Commit,Direct,New Business,New Client,Retail,LATAM,Mid-Market,Marketing Event,65713
+deal_224,owner_5,2025-02-16,2025-05-30,Closed Won,Closed,Channel,Existing Business,Upsell,Healthcare,EMEA,SMB,Outbound,82518
+deal_226,owner_5,2024-02-09,2024-05-31,Qualification,Pipeline,Channel,New Business,New Client,Healthcare,LATAM,SMB,Referral,18684
+deal_231,owner_5,2024-09-17,2025-03-12,Proposal,Best Case,Direct,Existing Business,Upsell,Tech,LATAM,SMB,Referral,26879
+deal_235,owner_5,2024-02-07,2024-06-16,Prospecting,Pipeline,Direct,New Business,New Client,Tech,EMEA,SMB,Referral,58331
+deal_236,owner_5,2025-03-11,2025-06-30,Prospecting,Pipeline,Direct,New Business,New Client,Tech,LATAM,SMB,Marketing Event,35396
+deal_237,owner_5,2024-02-25,2024-06-19,Qualification,Pipeline,Channel,New Business,New Client,Finance,EMEA,SMB,Inbound,30690
+deal_246,owner_5,2025-01-20,2025-06-08,Closed Won,Closed,Direct,Existing Business,Upsell,Retail,EMEA,SMB,Outbound,81125
+deal_249,owner_5,2024-08-06,2024-11-02,Prospecting,Pipeline,Channel,New Business,New Client,Finance,LATAM,SMB,Marketing Event,46148
+deal_267,owner_5,2024-10-14,2025-03-05,Qualification,Pipeline,Direct,Existing Business,Cross-Sell,Retail,EMEA,SMB,Partner,23387
+deal_272,owner_5,2025-01-22,2025-04-20,Qualification,Pipeline,Direct,New Business,New Client,Tech,LATAM,SMB,Marketing Event,56678
+deal_278,owner_5,2024-05-11,2024-10-25,Prospecting,Pipeline,Direct,New Business,New Client,Healthcare,North America,SMB,Referral,38981
+deal_286,owner_5,2024-03-20,2024-04-13,Qualification,Pipeline,Direct,Existing Business,Upsell,Finance,North America,SMB,Inbound,24030
+deal_289,owner_5,2025-01-20,2025-03-05,Closed Won,Closed,Channel,New Business,New Client,Healthcare,North America,SMB,Outbound,32500
+deal_309,owner_5,2024-10-10,2024-11-03,Negotiation,Best Case,Direct,Existing Business,Upsell,Healthcare,North America,SMB,Referral,21618
+deal_310,owner_5,2025-02-26,2025-05-14,Closed Lost,Closed,Channel,New Business,New Client,Retail,LATAM,SMB,Outbound,50250
+deal_319,owner_5,2025-04-15,2025-04-25,Prospecting,Pipeline,Direct,Existing Business,Upsell,Retail,LATAM,SMB,Partner,15972
+deal_329,owner_5,2024-11-28,2025-01-03,Proposal,Best Case,Channel,New Business,New Client,Finance,North America,SMB,Outbound,40721
+deal_335,owner_5,2024-11-26,2025-01-21,Proposal,Best Case,Channel,New Business,New Client,Tech,EMEA,SMB,Outbound,53367
+deal_419,owner_6,2024-03-29,2024-06-16,Negotiation,Commit,Channel,Existing Business,Cross-Sell,Finance,LATAM,Mid-Market,Marketing Event,26263
+deal_377,owner_5,2024-05-09,2024-09-05,Proposal,Best Case,Channel,Existing Business,Upsell,Retail,North America,SMB,Outbound,15613
+deal_386,owner_5,2025-04-25,2025-09-04,Closed Won,Closed,Direct,Existing Business,Upsell,Healthcare,EMEA,SMB,Marketing Event,46362
+deal_397,owner_5,2025-08-10,2025-12-21,Negotiation,Best Case,Channel,New Business,New Client,Healthcare,North America,SMB,Referral,47555
+deal_418,owner_5,2024-11-12,2025-02-01,Proposal,Best Case,Direct,Existing Business,Cross-Sell,Finance,North America,SMB,Partner,23892
+deal_426,owner_5,2024-05-20,2024-09-04,Prospecting,Pipeline,Direct,New Business,New Client,Finance,LATAM,SMB,Outbound,34502
+deal_428,owner_5,2024-03-28,2024-06-12,Prospecting,Pipeline,Channel,New Business,New Client,Healthcare,LATAM,SMB,Outbound,24601
+deal_475,owner_5,2024-10-01,2024-12-24,Qualification,Pipeline,Direct,New Business,New Client,Finance,LATAM,SMB,Referral,55372
+deal_477,owner_5,2024-05-07,2024-07-20,Proposal,Best Case,Channel,New Business,New Client,Tech,EMEA,SMB,Partner,27686
+deal_486,owner_5,2025-08-12,2025-08-29,Prospecting,Pipeline,Direct,New Business,New Client,Finance,EMEA,SMB,Referral,27914
+deal_489,owner_5,2024-10-22,2025-02-23,Closed Won,Closed,Direct,Existing Business,Upsell,Finance,EMEA,SMB,Outbound,35000
+deal_420,owner_1,2024-11-03,2025-04-23,Proposal,Commit,Direct,New Business,New Client,Retail,North America,SMB,Referral,54634
+deal_494,owner_5,2024-12-19,2025-05-28,Closed Lost,Closed,Channel,New Business,New Client,Healthcare,EMEA,SMB,Inbound,68949
+deal_500,owner_5,2024-04-06,2024-05-09,Prospecting,Pipeline,Direct,New Business,New Client,Retail,EMEA,SMB,Referral,20910
+deal_505,owner_5,2024-09-21,2025-02-13,Prospecting,Pipeline,Direct,Existing Business,Cross-Sell,Healthcare,LATAM,SMB,Outbound,29981
+deal_513,owner_5,2025-04-20,2025-07-29,Closed Won,Closed,Direct,New Business,New Client,Finance,North America,SMB,Marketing Event,68329
+deal_540,owner_5,2025-03-10,2025-09-04,Closed Won,Closed,Direct,New Business,New Client,Healthcare,EMEA,SMB,Marketing Event,44288
+deal_556,owner_5,2024-08-25,2025-02-03,Closed Lost,Closed,Channel,Existing Business,Upsell,Finance,North America,SMB,Referral,19764
+deal_563,owner_5,2024-01-28,2024-03-25,Qualification,Pipeline,Direct,New Business,New Client,Finance,LATAM,SMB,Inbound,35624
+deal_565,owner_5,2024-02-01,2024-07-09,Qualification,Pipeline,Direct,New Business,New Client,Retail,North America,SMB,Partner,14914
+deal_570,owner_5,2025-01-17,2025-05-21,Prospecting,Pipeline,Channel,New Business,New Client,Finance,LATAM,SMB,Marketing Event,46769
+deal_599,owner_5,2024-12-04,2024-12-31,Closed Lost,Closed,Channel,Existing Business,Cross-Sell,Finance,LATAM,SMB,Referral,22091
+deal_602,owner_5,2024-09-03,2025-02-25,Qualification,Pipeline,Channel,New Business,New Client,Healthcare,North America,SMB,Partner,48199
+deal_607,owner_5,2024-06-05,2024-10-17,Proposal,Best Case,Direct,New Business,New Client,Retail,EMEA,SMB,Partner,51233
+deal_612,owner_5,2024-07-13,2024-11-13,Closed Won,Closed,Channel,New Business,New Client,Finance,LATAM,SMB,Inbound,79513
+deal_615,owner_5,2024-08-21,2024-11-19,Proposal,Best Case,Channel,New Business,New Client,Finance,EMEA,SMB,Marketing Event,60766
+deal_631,owner_5,2025-01-10,2025-01-24,Qualification,Pipeline,Direct,Existing Business,Upsell,Healthcare,North America,SMB,Referral,21292
+deal_639,owner_5,2024-05-28,2024-11-14,Negotiation,Best Case,Direct,New Business,New Client,Retail,LATAM,SMB,Inbound,33134
+deal_641,owner_5,2025-08-12,2025-11-01,Prospecting,Pipeline,Direct,New Business,New Client,Finance,EMEA,SMB,Partner,33253
+deal_645,owner_5,2024-01-15,2024-02-03,Proposal,Best Case,Channel,New Business,New Client,Retail,EMEA,SMB,Outbound,40067
+deal_668,owner_5,2025-03-21,2025-06-17,Closed Won,Closed,Direct,Existing Business,Cross-Sell,Healthcare,LATAM,SMB,Partner,77420
+deal_674,owner_5,2024-12-26,2025-02-27,Closed Lost,Closed,Direct,New Business,New Client,Finance,LATAM,SMB,Partner,36002
+deal_45,owner_2,2025-04-10,2025-06-09,Negotiation,Commit,Direct,New Business,New Client,Healthcare,LATAM,SMB,Inbound,61791
+deal_678,owner_5,2025-08-22,2025-11-17,Qualification,Pipeline,Direct,Existing Business,Upsell,Finance,LATAM,SMB,Marketing Event,29482
+deal_683,owner_5,2024-05-26,2024-09-28,Qualification,Pipeline,Direct,Existing Business,Upsell,Finance,LATAM,SMB,Referral,21642
+deal_687,owner_5,2025-03-26,2025-04-21,Closed Won,Closed,Direct,New Business,New Client,Healthcare,EMEA,SMB,Marketing Event,58519
+deal_691,owner_5,2024-08-07,2024-12-14,Closed Lost,Closed,Direct,New Business,New Client,Finance,EMEA,SMB,Referral,67882
+deal_694,owner_5,2024-10-19,2024-11-17,Prospecting,Pipeline,Direct,New Business,New Client,Healthcare,North America,SMB,Partner,53500
+deal_696,owner_5,2024-04-18,2024-06-17,Qualification,Pipeline,Direct,New Business,New Client,Healthcare,North America,SMB,Partner,26300
+deal_15,owner_6,2024-01-12,2024-04-18,Closed Lost,Closed,Direct,New Business,New Client,Retail,North America,Mid-Market,Partner,117949
+deal_17,owner_6,2025-04-30,2025-10-22,Closed Won,Closed,Channel,New Business,New Client,Finance,North America,Mid-Market,Outbound,59942
+deal_20,owner_6,2025-08-03,2025-08-16,Proposal,Best Case,Channel,New Business,New Client,Retail,EMEA,Mid-Market,Inbound,36428
+deal_56,owner_6,2025-02-08,2025-05-20,Closed Lost,Closed,Direct,Existing Business,Upsell,Retail,EMEA,Mid-Market,Partner,224814
+deal_57,owner_6,2024-11-18,2025-01-01,Prospecting,Pipeline,Channel,New Business,New Client,Finance,LATAM,Mid-Market,Partner,76889
+deal_71,owner_6,2024-04-06,2024-09-30,Closed Won,Closed,Channel,Existing Business,Upsell,Tech,North America,Mid-Market,Inbound,73869
+deal_73,owner_6,2024-05-28,2024-07-28,Closed Won,Closed,Direct,New Business,New Client,Tech,North America,Mid-Market,Referral,68847
+deal_461,owner_9,2025-08-28,2025-11-13,Proposal,Commit,Channel,New Business,New Client,Retail,LATAM,Mid-Market,Marketing Event,45356
+deal_79,owner_6,2024-01-07,2024-03-30,Prospecting,Pipeline,Channel,Existing Business,Cross-Sell,Finance,North America,Mid-Market,Inbound,18469
+deal_84,owner_6,2024-08-30,2025-01-24,Prospecting,Pipeline,Direct,Existing Business,Cross-Sell,Retail,EMEA,Mid-Market,Referral,28020
+deal_104,owner_6,2024-03-27,2024-09-08,Closed Lost,Closed,Direct,New Business,New Client,Retail,EMEA,Mid-Market,Outbound,115191
+deal_107,owner_6,2024-09-12,2024-12-27,Prospecting,Pipeline,Direct,Existing Business,Cross-Sell,Finance,North America,Mid-Market,Partner,26939
+deal_115,owner_6,2024-11-21,2025-02-26,Qualification,Pipeline,Channel,Existing Business,Cross-Sell,Healthcare,North America,Mid-Market,Outbound,30968
+deal_116,owner_6,2024-11-07,2025-02-14,Qualification,Pipeline,Channel,New Business,New Client,Healthcare,LATAM,Mid-Market,Inbound,52071
+deal_48,owner_8,2024-03-25,2024-08-13,Negotiation,Commit,Direct,Existing Business,Cross-Sell,Tech,North America,Mid-Market,Inbound,14727
+deal_157,owner_6,2024-06-13,2024-08-27,Proposal,Best Case,Channel,New Business,New Client,Healthcare,LATAM,Mid-Market,Referral,70767
+deal_491,owner_5,2024-08-29,2025-01-20,Negotiation,Commit,Channel,Existing Business,Upsell,Finance,North America,SMB,Partner,24298
+deal_176,owner_6,2024-05-24,2024-10-04,Proposal,Best Case,Channel,Existing Business,Upsell,Tech,North America,Mid-Market,Outbound,16377
+deal_200,owner_6,2024-04-07,2024-08-05,Closed Lost,Closed,Channel,Existing Business,Upsell,Healthcare,LATAM,Mid-Market,Inbound,55724
+deal_219,owner_6,2025-02-07,2025-07-02,Qualification,Pipeline,Direct,Existing Business,Upsell,Healthcare,EMEA,Mid-Market,Marketing Event,20392
+deal_507,owner_9,2024-10-05,2025-02-22,Negotiation,Commit,Channel,Existing Business,Upsell,Healthcare,North America,Mid-Market,Inbound,27640
+deal_230,owner_6,2024-10-17,2025-01-23,Qualification,Pipeline,Direct,New Business,New Client,Healthcare,EMEA,Mid-Market,Partner,72534
+deal_233,owner_6,2024-02-03,2024-02-14,Prospecting,Pipeline,Channel,New Business,New Client,Tech,EMEA,Mid-Market,Inbound,76739
+deal_264,owner_6,2025-01-06,2025-03-24,Closed Won,Closed,Direct,New Business,New Client,Healthcare,EMEA,Mid-Market,Referral,34500
+deal_268,owner_6,2024-01-29,2024-07-19,Proposal,Best Case,Direct,New Business,New Client,Tech,LATAM,Mid-Market,Referral,69867
+deal_304,owner_6,2024-03-02,2024-07-01,Proposal,Best Case,Channel,New Business,New Client,Retail,LATAM,Mid-Market,Marketing Event,75391
+deal_308,owner_6,2024-09-26,2025-01-29,Closed Won,Closed,Channel,New Business,New Client,Finance,North America,Mid-Market,Inbound,39150
+deal_326,owner_6,2024-10-25,2025-03-08,Proposal,Best Case,Channel,Existing Business,Upsell,Healthcare,LATAM,Mid-Market,Marketing Event,22495
+deal_333,owner_6,2024-05-19,2024-10-30,Closed Won,Closed,Direct,Existing Business,Cross-Sell,Finance,EMEA,Mid-Market,Referral,73806
+deal_525,owner_8,2024-05-02,2024-09-12,Negotiation,Commit,Channel,New Business,New Client,Tech,EMEA,Mid-Market,Inbound,67906
+deal_342,owner_6,2024-09-07,2025-01-01,Qualification,Pipeline,Direct,Existing Business,Cross-Sell,Finance,LATAM,Mid-Market,Referral,19993
+deal_349,owner_6,2024-05-26,2024-08-26,Prospecting,Pipeline,Direct,New Business,New Client,Healthcare,North America,Mid-Market,Outbound,44549
+deal_354,owner_6,2025-01-19,2025-04-30,Prospecting,Pipeline,Channel,Existing Business,Upsell,Retail,EMEA,Mid-Market,Partner,14253
+deal_543,owner_8,2024-11-23,2025-05-13,Negotiation,Commit,Direct,New Business,New Client,Healthcare,EMEA,Mid-Market,Partner,59326
+deal_365,owner_6,2025-01-11,2025-03-10,Closed Won,Closed,Channel,Existing Business,Upsell,Tech,LATAM,Mid-Market,Referral,59395
+deal_545,owner_4,2024-09-03,2025-02-26,Negotiation,Commit,Channel,Existing Business,Cross-Sell,Healthcare,EMEA,SMB,Outbound,14868
+deal_421,owner_6,2025-04-16,2025-07-09,Closed Won,Closed,Channel,New Business,New Client,Tech,North America,Mid-Market,Referral,50952
+deal_435,owner_6,2024-03-02,2024-08-24,Closed Lost,Closed,Direct,Existing Business,Upsell,Finance,North America,Mid-Market,Partner,92824
+deal_445,owner_6,2025-04-30,2025-09-04,Closed Lost,Closed,Direct,New Business,New Client,Tech,EMEA,Mid-Market,Partner,185115
+deal_446,owner_6,2024-09-07,2024-11-20,Closed Lost,Closed,Direct,New Business,New Client,Finance,EMEA,Mid-Market,Marketing Event,58566
+deal_450,owner_6,2025-04-14,2025-08-21,Prospecting,Pipeline,Channel,New Business,New Client,Retail,EMEA,Mid-Market,Partner,69103
+deal_460,owner_6,2024-11-13,2025-03-26,Negotiation,Best Case,Channel,New Business,New Client,Retail,North America,Mid-Market,Inbound,67595
+deal_476,owner_6,2024-08-02,2024-11-18,Prospecting,Pipeline,Channel,Existing Business,Cross-Sell,Finance,EMEA,Mid-Market,Partner,20457
+deal_483,owner_6,2024-05-01,2024-06-11,Closed Lost,Closed,Direct,Existing Business,Cross-Sell,Retail,LATAM,Mid-Market,Inbound,53447
+deal_497,owner_6,2025-08-01,2025-12-11,Closed Won,Closed,Channel,Existing Business,Upsell,Tech,North America,Mid-Market,Partner,54618
+deal_502,owner_6,2024-03-18,2024-04-14,Closed Lost,Closed,Direct,New Business,New Client,Finance,LATAM,Mid-Market,Referral,18806
+deal_554,owner_6,2024-09-11,2024-11-14,Closed Won,Closed,Direct,New Business,New Client,Tech,EMEA,Mid-Market,Partner,69610
+deal_567,owner_6,2025-02-16,2025-03-25,Proposal,Best Case,Channel,Existing Business,Upsell,Tech,North America,Mid-Market,Marketing Event,23678
+deal_576,owner_6,2024-02-02,2024-05-02,Proposal,Best Case,Channel,New Business,New Client,Finance,EMEA,Mid-Market,Marketing Event,59399
+deal_578,owner_6,2024-09-28,2024-10-30,Closed Lost,Closed,Direct,New Business,New Client,Healthcare,LATAM,Mid-Market,Outbound,73582
+deal_586,owner_6,2024-05-24,2024-07-23,Closed Won,Closed,Direct,New Business,New Client,Healthcare,North America,Mid-Market,Outbound,68618
+deal_600,owner_6,2025-02-27,2025-04-15,Qualification,Pipeline,Direct,Existing Business,Upsell,Finance,LATAM,Mid-Market,Partner,25938
+deal_616,owner_6,2024-03-13,2024-07-26,Qualification,Pipeline,Channel,New Business,New Client,Healthcare,LATAM,Mid-Market,Outbound,50377
+deal_620,owner_6,2024-06-24,2024-10-05,Closed Won,Closed,Channel,New Business,New Client,Tech,EMEA,Mid-Market,Partner,54326
+deal_629,owner_6,2024-12-21,2025-06-08,Proposal,Best Case,Direct,Existing Business,Cross-Sell,Tech,EMEA,Mid-Market,Outbound,27739
+deal_636,owner_6,2025-08-01,2025-09-18,Proposal,Best Case,Direct,New Business,New Client,Tech,EMEA,Mid-Market,Referral,64314
+deal_546,owner_1,2024-03-15,2024-07-26,Proposal,Commit,Direct,Existing Business,Cross-Sell,Tech,North America,SMB,Partner,25032
+deal_23,owner_7,2025-04-02,2025-08-18,Closed Lost,Closed,Direct,New Business,New Client,Healthcare,EMEA,Mid-Market,Outbound,79989
+deal_561,owner_13,2024-10-18,2024-10-29,Negotiation,Commit,Channel,New Business,New Client,Finance,EMEA,Strategic,Inbound,148354
+deal_566,owner_12,2024-12-06,2025-01-14,Negotiation,Commit,Direct,New Business,New Client,Finance,North America,Strategic,Marketing Event,121929
+deal_80,owner_7,2025-01-22,2025-03-10,Negotiation,Best Case,Channel,Existing Business,Cross-Sell,Retail,North America,Mid-Market,Inbound,15537
+deal_81,owner_7,2025-08-02,2025-12-05,Prospecting,Pipeline,Direct,New Business,New Client,Healthcare,LATAM,Mid-Market,Marketing Event,40271
+deal_82,owner_7,2025-04-27,2025-06-21,Proposal,Best Case,Direct,Existing Business,Upsell,Retail,LATAM,Mid-Market,Inbound,22827
+deal_113,owner_7,2024-11-05,2025-01-12,Proposal,Best Case,Direct,Existing Business,Cross-Sell,Retail,LATAM,Mid-Market,Partner,23953
+deal_123,owner_7,2024-11-10,2025-03-11,Closed Won,Closed,Channel,Existing Business,Upsell,Retail,EMEA,Mid-Market,Referral,32500
+deal_125,owner_7,2024-05-08,2024-10-16,Closed Lost,Closed,Direct,New Business,New Client,Finance,EMEA,Mid-Market,Partner,113166
+deal_583,owner_11,2024-09-22,2025-01-12,Negotiation,Commit,Channel,Existing Business,Upsell,Finance,LATAM,Enterprise,Referral,47192
+deal_141,owner_7,2024-04-12,2024-06-12,Prospecting,Pipeline,Channel,Existing Business,Upsell,Retail,EMEA,Mid-Market,Marketing Event,28164
+deal_142,owner_7,2024-02-13,2024-06-10,Closed Won,Closed,Direct,New Business,New Client,Tech,EMEA,Mid-Market,Marketing Event,50347
+deal_161,owner_7,2025-04-27,2025-05-08,Prospecting,Pipeline,Direct,Existing Business,Upsell,Retail,North America,Mid-Market,Inbound,18121
+deal_589,owner_9,2024-03-17,2024-05-25,Negotiation,Commit,Channel,New Business,New Client,Healthcare,LATAM,Mid-Market,Outbound,73277
+deal_178,owner_7,2024-02-12,2024-03-23,Prospecting,Pipeline,Direct,Existing Business,Cross-Sell,Finance,EMEA,Mid-Market,Partner,17460
+deal_193,owner_7,2024-09-07,2024-11-22,Closed Lost,Closed,Direct,New Business,New Client,Retail,EMEA,Mid-Market,Partner,147507
+deal_206,owner_7,2025-01-09,2025-02-17,Closed Won,Closed,Direct,Existing Business,Cross-Sell,Healthcare,EMEA,Mid-Market,Referral,14500
+deal_242,owner_7,2025-01-18,2025-02-26,Prospecting,Pipeline,Direct,New Business,New Client,Retail,EMEA,Mid-Market,Partner,75580
+deal_593,owner_12,2025-08-19,2025-11-21,Negotiation,Commit,Channel,Existing Business,Cross-Sell,Healthcare,EMEA,Strategic,Partner,16895
+deal_255,owner_7,2024-02-10,2024-05-09,Proposal,Best Case,Direct,New Business,New Client,Healthcare,EMEA,Mid-Market,Outbound,72529
+deal_271,owner_7,2025-01-15,2025-03-25,Closed Lost,Closed,Channel,New Business,New Client,Healthcare,LATAM,Mid-Market,Inbound,58571
+deal_287,owner_7,2024-04-16,2024-06-24,Negotiation,Best Case,Channel,New Business,New Client,Tech,EMEA,Mid-Market,Partner,47613
+deal_301,owner_7,2024-01-06,2024-05-08,Prospecting,Pipeline,Direct,Existing Business,Cross-Sell,Retail,North America,Mid-Market,Referral,28462
+deal_321,owner_7,2024-08-06,2024-12-17,Closed Won,Closed,Channel,Existing Business,Upsell,Retail,EMEA,Mid-Market,Partner,63230
+deal_343,owner_7,2024-10-05,2024-12-20,Proposal,Best Case,Direct,Existing Business,Upsell,Tech,LATAM,Mid-Market,Outbound,24910
+deal_344,owner_7,2025-02-02,2025-02-21,Qualification,Pipeline,Direct,New Business,New Client,Tech,LATAM,Mid-Market,Inbound,64601
+deal_358,owner_7,2024-11-12,2025-01-07,Closed Won,Closed,Direct,New Business,New Client,Retail,North America,Mid-Market,Outbound,53559
+deal_362,owner_7,2025-08-03,2025-08-13,Closed Won,Closed,Direct,Existing Business,Upsell,Healthcare,LATAM,Mid-Market,Inbound,67755
+deal_376,owner_7,2024-04-04,2024-05-19,Proposal,Best Case,Direct,Existing Business,Cross-Sell,Healthcare,LATAM,Mid-Market,Inbound,23659
+deal_395,owner_7,2024-11-05,2024-12-12,Proposal,Best Case,Channel,New Business,New Client,Tech,EMEA,Mid-Market,Referral,36854
+deal_410,owner_7,2024-12-14,2025-03-17,Closed Lost,Closed,Direct,Existing Business,Upsell,Healthcare,EMEA,Mid-Market,Marketing Event,27056
+deal_422,owner_7,2025-08-05,2025-08-16,Proposal,Best Case,Direct,New Business,New Client,Finance,EMEA,Mid-Market,Inbound,60747
+deal_423,owner_7,2024-12-01,2025-03-24,Qualification,Pipeline,Direct,New Business,New Client,Tech,North America,Mid-Market,Partner,64822
+deal_457,owner_7,2024-11-07,2024-12-12,Proposal,Best Case,Channel,Existing Business,Upsell,Tech,North America,Mid-Market,Partner,24102
+deal_479,owner_7,2024-08-26,2024-09-14,Prospecting,Pipeline,Direct,New Business,New Client,Finance,LATAM,Mid-Market,Referral,56417
+deal_499,owner_7,2024-02-29,2024-03-18,Closed Won,Closed,Channel,Existing Business,Cross-Sell,Finance,EMEA,Mid-Market,Outbound,60458
+deal_530,owner_7,2024-03-24,2024-08-03,Proposal,Best Case,Channel,Existing Business,Upsell,Healthcare,LATAM,Mid-Market,Referral,28624
+deal_555,owner_7,2024-03-28,2024-09-21,Closed Won,Closed,Direct,Existing Business,Cross-Sell,Healthcare,LATAM,Mid-Market,Outbound,53735
+deal_558,owner_7,2024-05-31,2024-07-09,Negotiation,Best Case,Channel,Existing Business,Upsell,Healthcare,North America,Mid-Market,Outbound,18594
+deal_564,owner_7,2024-07-29,2024-09-12,Closed Lost,Closed,Direct,New Business,New Client,Finance,LATAM,Mid-Market,Marketing Event,186167
+deal_577,owner_7,2025-01-15,2025-04-23,Proposal,Best Case,Channel,New Business,New Client,Retail,North America,Mid-Market,Marketing Event,43154
+deal_613,owner_7,2024-07-27,2024-10-06,Closed Won,Closed,Channel,Existing Business,Cross-Sell,Retail,EMEA,Mid-Market,Marketing Event,70990
+deal_626,owner_7,2025-08-22,2026-01-03,Closed Won,Closed,Direct,New Business,New Client,Finance,EMEA,Mid-Market,Referral,59241
+deal_650,owner_7,2025-08-22,2025-11-12,Prospecting,Pipeline,Channel,Existing Business,Upsell,Tech,North America,Mid-Market,Partner,21441
+deal_657,owner_7,2025-08-25,2026-01-03,Proposal,Best Case,Direct,Existing Business,Cross-Sell,Tech,LATAM,Mid-Market,Referral,21220
+deal_675,owner_7,2025-04-22,2025-06-19,Closed Won,Closed,Direct,Existing Business,Cross-Sell,Tech,LATAM,Mid-Market,Inbound,75514
+deal_679,owner_7,2024-01-10,2024-03-03,Proposal,Best Case,Direct,New Business,New Client,Tech,EMEA,Mid-Market,Marketing Event,36287
+deal_10,owner_8,2025-03-30,2025-07-22,Proposal,Best Case,Channel,Existing Business,Upsell,Finance,LATAM,Mid-Market,Inbound,30935
+deal_21,owner_8,2025-03-02,2025-05-25,Qualification,Pipeline,Direct,Existing Business,Cross-Sell,Healthcare,North America,Mid-Market,Referral,28503
+deal_24,owner_8,2024-03-03,2024-08-17,Closed Won,Closed,Channel,Existing Business,Cross-Sell,Healthcare,North America,Mid-Market,Marketing Event,71979
+deal_29,owner_8,2024-10-04,2024-12-29,Closed Lost,Closed,Channel,New Business,New Client,Healthcare,North America,Mid-Market,Referral,84162
+deal_595,owner_11,2024-09-06,2025-02-19,Negotiation,Commit,Channel,New Business,New Client,Tech,North America,Enterprise,Referral,112249
+deal_618,owner_2,2024-03-19,2024-03-30,Negotiation,Commit,Direct,Existing Business,Cross-Sell,Retail,North America,SMB,Partner,21058
+deal_50,owner_8,2024-01-09,2024-03-07,Prospecting,Pipeline,Direct,Existing Business,Upsell,Healthcare,North America,Mid-Market,Referral,15492
+deal_51,owner_8,2025-08-27,2025-10-09,Proposal,Best Case,Direct,New Business,New Client,Tech,North America,Mid-Market,Partner,57750
+deal_52,owner_8,2024-10-22,2024-12-17,Prospecting,Pipeline,Direct,Existing Business,Upsell,Finance,LATAM,Mid-Market,Marketing Event,14410
+deal_58,owner_8,2025-01-26,2025-02-15,Closed Won,Closed,Direct,New Business,New Client,Finance,EMEA,Mid-Market,Outbound,49819
+deal_72,owner_8,2025-08-02,2025-09-30,Closed Won,Closed,Direct,Existing Business,Cross-Sell,Retail,LATAM,Mid-Market,Referral,54199
+deal_111,owner_8,2024-01-09,2024-02-11,Proposal,Best Case,Channel,New Business,New Client,Finance,EMEA,Mid-Market,Inbound,51725
+deal_126,owner_8,2024-12-12,2025-05-07,Negotiation,Best Case,Direct,New Business,New Client,Retail,North America,Mid-Market,Marketing Event,58777
+deal_133,owner_8,2025-02-25,2025-08-23,Closed Won,Closed,Channel,New Business,New Client,Tech,North America,Mid-Market,Partner,67073
+deal_134,owner_8,2024-04-25,2024-09-23,Closed Lost,Closed,Direct,New Business,New Client,Retail,North America,Mid-Market,Outbound,35938
+deal_140,owner_8,2024-11-13,2025-04-21,Prospecting,Pipeline,Channel,New Business,New Client,Retail,North America,Mid-Market,Inbound,74840
+deal_159,owner_8,2024-08-18,2024-11-15,Closed Lost,Closed,Direct,New Business,New Client,Retail,LATAM,Mid-Market,Partner,73744
+deal_232,owner_8,2024-11-08,2025-04-10,Negotiation,Best Case,Channel,New Business,New Client,Healthcare,North America,Mid-Market,Inbound,57020
+deal_252,owner_8,2024-12-18,2025-04-29,Prospecting,Pipeline,Channel,Existing Business,Cross-Sell,Healthcare,North America,Mid-Market,Inbound,20782
+deal_274,owner_8,2024-06-15,2024-12-08,Closed Lost,Closed,Channel,Existing Business,Upsell,Retail,LATAM,Mid-Market,Inbound,18872
+deal_276,owner_8,2024-03-30,2024-07-19,Closed Won,Closed,Channel,New Business,New Client,Healthcare,EMEA,Mid-Market,Outbound,76309
+deal_283,owner_8,2024-11-15,2024-12-20,Proposal,Best Case,Channel,Existing Business,Upsell,Tech,North America,Mid-Market,Marketing Event,29018
+deal_299,owner_8,2024-09-29,2025-02-02,Closed Lost,Closed,Channel,Existing Business,Upsell,Tech,North America,Mid-Market,Inbound,257671
+deal_318,owner_8,2024-08-01,2024-08-17,Closed Lost,Closed,Channel,New Business,New Client,Healthcare,EMEA,Mid-Market,Outbound,65738
+deal_345,owner_8,2025-02-27,2025-08-07,Prospecting,Pipeline,Channel,Existing Business,Cross-Sell,Healthcare,North America,Mid-Market,Partner,24279
+deal_384,owner_8,2024-09-11,2024-12-13,Proposal,Best Case,Direct,Existing Business,Cross-Sell,Finance,LATAM,Mid-Market,Referral,19555
+deal_385,owner_8,2024-12-11,2025-06-01,Prospecting,Pipeline,Direct,Existing Business,Cross-Sell,Tech,EMEA,Mid-Market,Outbound,20792
+deal_619,owner_3,2025-02-20,2025-06-19,Negotiation,Commit,Direct,Existing Business,Cross-Sell,Finance,LATAM,SMB,Outbound,22530
+deal_406,owner_8,2024-12-30,2025-04-01,Closed Won,Closed,Direct,New Business,New Client,Finance,LATAM,Mid-Market,Referral,68951
+deal_411,owner_8,2024-03-09,2024-05-26,Proposal,Best Case,Channel,Existing Business,Cross-Sell,Retail,North America,Mid-Market,Inbound,22475
+deal_416,owner_8,2025-01-15,2025-04-11,Proposal,Best Case,Direct,New Business,New Client,Healthcare,LATAM,Mid-Market,Referral,46185
+deal_417,owner_8,2025-03-31,2025-09-19,Proposal,Best Case,Channel,Existing Business,Cross-Sell,Finance,EMEA,Mid-Market,Referral,22885
+deal_431,owner_8,2024-11-09,2025-03-10,Qualification,Pipeline,Direct,Existing Business,Cross-Sell,Healthcare,North America,Mid-Market,Partner,30991
+deal_466,owner_8,2025-03-29,2025-07-20,Closed Won,Closed,Channel,New Business,New Client,Retail,LATAM,Mid-Market,Inbound,42109
+deal_471,owner_8,2024-06-15,2024-08-01,Proposal,Best Case,Direct,Existing Business,Upsell,Retail,LATAM,Mid-Market,Referral,29449
+deal_484,owner_8,2024-02-04,2024-05-25,Proposal,Best Case,Direct,Existing Business,Upsell,Finance,LATAM,Mid-Market,Referral,16442
+deal_522,owner_8,2024-01-07,2024-07-05,Proposal,Best Case,Channel,New Business,New Client,Healthcare,North America,Mid-Market,Inbound,57985
+deal_637,owner_13,2024-05-20,2024-06-03,Negotiation,Commit,Channel,New Business,New Client,Retail,EMEA,Strategic,Partner,89243
+deal_534,owner_8,2024-02-17,2024-04-07,Proposal,Best Case,Direct,New Business,New Client,Finance,EMEA,Mid-Market,Outbound,66525
+deal_64,owner_2,2025-05-03,2025-10-30,Negotiation,Commit,Direct,Existing Business,Upsell,Healthcare,North America,SMB,Outbound,30637
+deal_573,owner_8,2024-10-12,2025-04-08,Closed Won,Closed,Direct,Existing Business,Upsell,Healthcare,LATAM,Mid-Market,Outbound,58311
+deal_603,owner_8,2024-03-29,2024-08-30,Closed Won,Closed,Channel,New Business,New Client,Finance,EMEA,Mid-Market,Inbound,61976
+deal_609,owner_8,2024-08-10,2024-12-30,Proposal,Best Case,Direct,New Business,New Client,Finance,EMEA,Mid-Market,Inbound,69056
+deal_614,owner_8,2024-01-08,2024-01-30,Prospecting,Pipeline,Direct,Existing Business,Upsell,Retail,North America,Mid-Market,Referral,31366
+deal_653,owner_8,2025-04-29,2025-07-18,Qualification,Pipeline,Direct,Existing Business,Cross-Sell,Healthcare,EMEA,Mid-Market,Inbound,19186
+deal_659,owner_8,2025-08-13,2026-01-27,Closed Lost,Closed,Channel,Existing Business,Cross-Sell,Finance,EMEA,Mid-Market,Inbound,53632
+deal_693,owner_8,2024-06-27,2024-10-26,Prospecting,Pipeline,Channel,Existing Business,Cross-Sell,Finance,LATAM,Mid-Market,Referral,18849
+deal_3,owner_9,2024-11-09,2025-04-01,Closed Lost,Closed,Channel,Existing Business,Upsell,Finance,North America,Mid-Market,Referral,88848
+deal_16,owner_9,2024-10-31,2025-01-22,Qualification,Pipeline,Channel,New Business,New Client,Retail,LATAM,Mid-Market,Marketing Event,54880
+deal_33,owner_9,2024-08-03,2024-08-16,Proposal,Best Case,Channel,Existing Business,Upsell,Tech,LATAM,Mid-Market,Referral,22406
+deal_36,owner_9,2024-09-30,2024-11-03,Qualification,Pipeline,Channel,New Business,New Client,Healthcare,LATAM,Mid-Market,Partner,63173
+deal_43,owner_9,2025-03-24,2025-08-28,Prospecting,Pipeline,Direct,New Business,New Client,Healthcare,EMEA,Mid-Market,Inbound,58849
+deal_60,owner_9,2024-01-18,2024-06-21,Prospecting,Pipeline,Channel,Existing Business,Cross-Sell,Finance,EMEA,Mid-Market,Inbound,13819
+deal_76,owner_9,2025-08-25,2026-02-07,Prospecting,Pipeline,Direct,Existing Business,Cross-Sell,Retail,North America,Mid-Market,Outbound,22973
+deal_87,owner_9,2024-10-21,2025-04-02,Closed Won,Closed,Channel,New Business,New Client,Healthcare,EMEA,Mid-Market,Partner,74346
+deal_94,owner_9,2024-05-01,2024-07-28,Closed Won,Closed,Channel,New Business,New Client,Tech,North America,Mid-Market,Partner,56821
+deal_99,owner_9,2024-01-21,2024-07-17,Negotiation,Best Case,Direct,New Business,New Client,Retail,North America,Mid-Market,Referral,63156
+deal_100,owner_9,2024-01-28,2024-03-25,Closed Won,Closed,Direct,New Business,New Client,Finance,EMEA,Mid-Market,Outbound,56606
+deal_162,owner_9,2024-03-11,2024-05-03,Qualification,Pipeline,Direct,Existing Business,Upsell,Tech,EMEA,Mid-Market,Referral,28927
+deal_646,owner_12,2024-04-20,2024-08-07,Negotiation,Commit,Direct,New Business,New Client,Tech,LATAM,Strategic,Outbound,142624
+deal_171,owner_9,2024-01-30,2024-04-07,Closed Won,Closed,Direct,New Business,New Client,Tech,LATAM,Mid-Market,Outbound,46569
+deal_174,owner_9,2024-05-22,2024-07-16,Prospecting,Pipeline,Direct,Existing Business,Upsell,Healthcare,EMEA,Mid-Market,Referral,15040
+deal_208,owner_9,2025-03-01,2025-06-23,Prospecting,Pipeline,Channel,Existing Business,Upsell,Retail,LATAM,Mid-Market,Partner,15021
+deal_213,owner_9,2024-01-23,2024-04-22,Qualification,Pipeline,Channel,New Business,New Client,Healthcare,North America,Mid-Market,Referral,44835
+deal_654,owner_12,2024-01-07,2024-03-10,Negotiation,Commit,Channel,Existing Business,Upsell,Retail,EMEA,Strategic,Outbound,287750
+deal_225,owner_9,2025-08-10,2025-11-09,Closed Lost,Closed,Direct,New Business,New Client,Tech,North America,Mid-Market,Partner,64879
+deal_234,owner_9,2024-11-17,2025-05-01,Closed Won,Closed,Direct,Existing Business,Upsell,Healthcare,LATAM,Mid-Market,Marketing Event,61664
+deal_238,owner_9,2025-05-07,2025-10-17,Qualification,Pipeline,Channel,Existing Business,Upsell,Retail,EMEA,Mid-Market,Marketing Event,24719
+deal_251,owner_9,2025-04-25,2025-05-23,Closed Lost,Closed,Direct,Existing Business,Upsell,Finance,EMEA,Mid-Market,Inbound,68273
+deal_660,owner_4,2024-07-01,2024-12-13,Negotiation,Commit,Direct,Existing Business,Upsell,Tech,EMEA,SMB,Referral,24484
+deal_273,owner_9,2024-08-28,2024-11-28,Qualification,Pipeline,Channel,New Business,New Client,Tech,EMEA,Mid-Market,Inbound,43958
+deal_312,owner_9,2024-07-18,2024-10-06,Proposal,Best Case,Direct,Existing Business,Upsell,Tech,EMEA,Mid-Market,Partner,25653
+deal_322,owner_9,2024-07-27,2024-11-30,Prospecting,Pipeline,Channel,Existing Business,Upsell,Retail,LATAM,Mid-Market,Marketing Event,25639
+deal_327,owner_9,2024-12-18,2025-04-27,Qualification,Pipeline,Channel,Existing Business,Cross-Sell,Healthcare,North America,Mid-Market,Marketing Event,26085
+deal_346,owner_9,2025-02-10,2025-05-27,Negotiation,Best Case,Channel,Existing Business,Cross-Sell,Retail,LATAM,Mid-Market,Outbound,29654
+deal_366,owner_9,2024-12-19,2025-05-08,Prospecting,Pipeline,Direct,Existing Business,Cross-Sell,Retail,LATAM,Mid-Market,Partner,21069
+deal_371,owner_9,2024-01-13,2024-02-24,Prospecting,Pipeline,Channel,Existing Business,Upsell,Finance,EMEA,Mid-Market,Outbound,15550
+deal_372,owner_9,2025-02-11,2025-03-07,Proposal,Best Case,Channel,New Business,New Client,Retail,EMEA,Mid-Market,Partner,58759
+deal_381,owner_9,2024-03-14,2024-05-21,Prospecting,Pipeline,Direct,Existing Business,Cross-Sell,Healthcare,North America,Mid-Market,Marketing Event,18471
+deal_664,owner_3,2024-08-19,2025-01-29,Negotiation,Commit,Channel,Existing Business,Upsell,Healthcare,North America,SMB,Partner,30162
+deal_398,owner_9,2024-10-07,2025-04-05,Negotiation,Best Case,Direct,New Business,New Client,Tech,North America,Mid-Market,Outbound,70383
+deal_401,owner_9,2024-12-25,2025-02-14,Closed Lost,Closed,Direct,New Business,New Client,Tech,North America,Mid-Market,Inbound,48684
+deal_67,owner_7,2025-02-21,2025-07-09,Negotiation,Commit,Channel,New Business,New Client,Tech,EMEA,Mid-Market,Marketing Event,74608
+deal_438,owner_9,2024-06-09,2024-08-19,Proposal,Best Case,Direct,Existing Business,Cross-Sell,Finance,North America,Mid-Market,Outbound,14156
+deal_677,owner_5,2025-01-14,2025-04-22,Negotiation,Commit,Direct,New Business,New Client,Retail,EMEA,SMB,Partner,41563
+deal_487,owner_9,2024-10-25,2025-02-14,Closed Lost,Closed,Direct,Existing Business,Cross-Sell,Tech,North America,Mid-Market,Inbound,59781
+deal_504,owner_9,2024-07-22,2024-08-28,Closed Won,Closed,Direct,Existing Business,Cross-Sell,Retail,EMEA,Mid-Market,Outbound,55175
+deal_680,owner_4,2024-08-13,2025-02-02,Negotiation,Commit,Channel,New Business,New Client,Finance,LATAM,SMB,Outbound,16605
+deal_511,owner_9,2024-02-06,2024-06-22,Qualification,Pipeline,Channel,Existing Business,Upsell,Tech,LATAM,Mid-Market,Referral,21484
+deal_550,owner_9,2024-08-24,2025-02-08,Prospecting,Pipeline,Direct,Existing Business,Upsell,Healthcare,EMEA,Mid-Market,Marketing Event,25121
+deal_562,owner_9,2024-11-02,2025-01-13,Prospecting,Pipeline,Channel,New Business,New Client,Healthcare,EMEA,Mid-Market,Inbound,50082
+deal_568,owner_9,2024-07-21,2024-10-05,Closed Won,Closed,Direct,New Business,New Client,Healthcare,North America,Mid-Market,Marketing Event,75828
+deal_580,owner_9,2025-05-07,2025-10-23,Closed Lost,Closed,Channel,New Business,New Client,Tech,EMEA,Mid-Market,Partner,79981
+deal_581,owner_9,2025-03-06,2025-04-20,Qualification,Pipeline,Channel,Existing Business,Upsell,Healthcare,North America,Mid-Market,Referral,31553
+deal_74,owner_6,2025-08-13,2025-08-26,Negotiation,Commit,Direct,Existing Business,Cross-Sell,Retail,North America,Mid-Market,Marketing Event,26371
+deal_591,owner_9,2024-06-23,2024-07-04,Closed Won,Closed,Channel,New Business,New Client,Retail,LATAM,Mid-Market,Inbound,54743
+deal_598,owner_9,2025-04-26,2025-05-22,Prospecting,Pipeline,Channel,New Business,New Client,Finance,LATAM,Mid-Market,Referral,59184
+deal_604,owner_9,2024-11-08,2025-02-25,Closed Lost,Closed,Direct,Existing Business,Upsell,Retail,LATAM,Mid-Market,Marketing Event,43355
+deal_647,owner_9,2025-04-12,2025-09-25,Qualification,Pipeline,Channel,New Business,New Client,Tech,LATAM,Mid-Market,Inbound,46585
+deal_690,owner_9,2024-02-29,2024-05-17,Negotiation,Best Case,Direct,New Business,New Client,Finance,EMEA,Mid-Market,Outbound,72775
+deal_700,owner_9,2025-01-07,2025-02-01,Closed Won,Closed,Channel,Existing Business,Upsell,Healthcare,EMEA,Mid-Market,Marketing Event,13900

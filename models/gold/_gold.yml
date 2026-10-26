@@ -1,0 +1,85 @@
+version: 2
+
+models:
+  - name: dim_owners
+    description: "Gold. Sales reps, without personal data. Grain: one row per owner."
+    columns:
+      - name: owner_id
+        data_tests: [unique, not_null]
+      - name: is_active_as_of
+        description: Still in the company on the as-of date.
+
+  - name: fct_deals
+    description: >
+      Gold. One row per deal: current CRM state plus history summarized from the snapshots
+      (furthest stage, weeks per stage, date marked won) and pipeline status as of as_of_date.
+    columns:
+      - name: deal_id
+        data_tests: [unique, not_null]
+      - name: owner_id
+        data_tests:
+          - relationships:
+              arguments:
+                to: ref('dim_owners')
+                field: owner_id
+      - name: close_quarter
+        description: Quarter of close_date. Bookings are attributed to this quarter.
+      - name: furthest_open_stage
+        description: Furthest open stage the deal reached in the snapshots (null if no history).
+      - name: won_snapshot_date
+        description: First snapshot where the deal shows Closed Won.
+      - name: days_won_before_close
+        description: Days between the first Closed Won snapshot and close_date.
+      - name: is_won_well_before_close
+        description: >
+          DQ flag. Shown as Closed Won more than 21 days before close_date. Before 2025-06-09 no deal
+          was marked won more than 6 days early; 15 deals jumped from Negotiation to Closed Won on
+          that last snapshot, 24-141 days early.
+        data_tests:
+          - accepted_values:
+              arguments:
+                values: [false]
+              config:
+                severity: warn
+      - name: is_created_by_inactive_owner
+        description: DQ flag. Created after the owner's role_end_date (owner never reassigned).
+        data_tests:
+          - accepted_values:
+              arguments:
+                values: [false]
+              config:
+                severity: warn
+      - name: is_stale
+        description: >
+          Open with close_date before as_of_date, never closed won or lost. These deals drop out of
+          the weekly snapshot after their close date but are still open in the CRM.
+      - name: is_live_pipeline
+        description: Open, created by as_of_date, close_date on or after as_of_date.
+      - name: is_orphaned
+        description: Open deal whose owner is no longer active.
+      - name: outcome
+        description: Won, Lost, Left open (open past its close date) or Open (close date still ahead).
+
+  - name: fct_deal_snapshots
+    description: >
+      Gold. Weekly pipeline snapshots. Grain: one row per deal per snapshot_date.
+      Every deal appears each week from creation until the week of its close date.
+    data_tests:
+      - unique:
+          arguments:
+            column_name: "deal_id || '|' || snapshot_date"
+    columns:
+      - name: deal_id
+        data_tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('fct_deals')
+                field: deal_id
+      - name: is_forecast_call
+        description: >
+          Part of the start-of-quarter forecast: first snapshot of a completed quarter, due in that
+          quarter, and Commit, Best Case or already won.
+      - name: is_pre_quarter_reading
+        description: >
+          The snapshot used to measure the pipeline for a quarter, taken 3 to 5 weeks before it starts.

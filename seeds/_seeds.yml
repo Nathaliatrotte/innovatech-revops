@@ -1,0 +1,223 @@
+version: 2
+
+seeds:
+  - name: deals_meta
+    description: >
+      Bronze. Raw CRM deal export, loaded as-is. Grain: one row per deal, no stage history.
+      For every deal that appears in deals_snapshot, this row equals its last weekly snapshot.
+      It also holds 50 deals created in Aug 2025, after the last snapshot.
+    config:
+      column_types:
+        deal_id: varchar
+        owner_id: varchar
+        created_date: date
+        close_date: date
+        deal_stage: varchar
+        forecast_category: varchar
+        record_type: varchar
+        deal_type: varchar
+        deal_order_type: varchar
+        account_industry: varchar
+        account_region: varchar
+        account_size: varchar
+        deal_source: varchar
+        deal_amount: bigint
+    columns:
+      - name: deal_id
+        description: Deal identifier (primary key).
+        data_tests:
+          - unique
+          - not_null
+      - name: owner_id
+        description: Sales rep who owns the deal.
+        data_tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('owners')
+                field: owner_id
+      - name: created_date
+        description: Date the opportunity was created.
+        data_tests:
+          - not_null
+      - name: close_date
+        description: >
+          Close date. For closed deals the snapshot shows them closed 0-6 days before this date
+          (except 15 deals marked won on 2025-06-09, 24-141 days early). For open deals, the expected date.
+        data_tests:
+          - not_null
+      - name: deal_stage
+        description: Current pipeline stage.
+        data_tests:
+          - accepted_values:
+              arguments:
+                values: ['Prospecting', 'Qualification', 'Proposal', 'Negotiation', 'Closed Won', 'Closed Lost']
+      - name: forecast_category
+        description: Rep-submitted forecast bucket.
+        data_tests:
+          - accepted_values:
+              arguments:
+                values: ['Pipeline', 'Best Case', 'Commit', 'Closed']
+      - name: record_type
+        description: Sales motion (Direct or Channel).
+        data_tests:
+          - accepted_values:
+              arguments:
+                values: ['Direct', 'Channel']
+      - name: deal_type
+        description: New Business or Existing Business.
+        data_tests:
+          - accepted_values:
+              arguments:
+                values: ['New Business', 'Existing Business']
+      - name: deal_order_type
+        description: New Client, Upsell or Cross-Sell.
+        data_tests:
+          - accepted_values:
+              arguments:
+                values: ['New Client', 'Upsell', 'Cross-Sell']
+      - name: account_industry
+        description: Account industry.
+      - name: account_region
+        description: Account region.
+      - name: account_size
+        description: Account segment (SMB, Mid-Market, Enterprise, Strategic).
+        data_tests:
+          - accepted_values:
+              arguments:
+                values: ['SMB', 'Mid-Market', 'Enterprise', 'Strategic']
+      - name: deal_source
+        description: Lead source.
+      - name: deal_amount
+        description: Deal value in USD.
+        data_tests:
+          - not_null
+
+  - name: deals_snapshot
+    description: >
+      Bronze. Weekly (Monday) pipeline snapshots, 2024-01-01 to 2025-06-09. Grain: one row per
+      deal_id per snapshot_date. Each deal appears every week from its creation until the week of
+      its close_date, then drops out whether it closed or not. Owner never changes within a deal.
+    config:
+      column_types:
+        deal_id: varchar
+        snapshot_date: date
+        stage: varchar
+        forecast_category: varchar
+        amount: bigint
+        close_date: date
+        owner_id: varchar
+    data_tests:
+      - unique:
+          arguments:
+            column_name: "deal_id || '|' || snapshot_date"
+    columns:
+      - name: deal_id
+        description: Deal identifier (FK to deals_meta).
+        data_tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('deals_meta')
+                field: deal_id
+      - name: snapshot_date
+        description: Monday the snapshot was taken.
+        data_tests:
+          - not_null
+      - name: stage
+        description: Deal stage as of snapshot_date.
+        data_tests:
+          - accepted_values:
+              arguments:
+                values: ['Prospecting', 'Qualification', 'Proposal', 'Negotiation', 'Closed Won', 'Closed Lost']
+      - name: forecast_category
+        description: Forecast bucket as of snapshot_date.
+        data_tests:
+          - accepted_values:
+              arguments:
+                values: ['Pipeline', 'Best Case', 'Commit', 'Closed']
+      - name: amount
+        description: Deal value in USD as of snapshot_date.
+        data_tests:
+          - not_null
+      - name: close_date
+        description: Expected close date as of snapshot_date (changes over time = slippage).
+        data_tests:
+          - not_null
+      - name: owner_id
+        description: Deal owner as of snapshot_date.
+        data_tests:
+          - relationships:
+              arguments:
+                to: ref('owners')
+                field: owner_id
+
+  - name: owners
+    description: "Bronze. Sales reps. Grain: one row per owner."
+    config:
+      column_types:
+        owner_id: varchar
+        name: varchar
+        email: varchar
+        role_start_date: date
+        role_end_date: date
+        role: varchar
+        manager: varchar
+        segment: varchar
+    columns:
+      - name: owner_id
+        description: Owner identifier (primary key).
+        data_tests:
+          - unique
+          - not_null
+      - name: name
+        description: Rep full name.
+      - name: email
+        description: Rep email (PII, not used downstream).
+      - name: role_start_date
+        description: Date the rep started in the role.
+      - name: role_end_date
+        description: Date the rep left the role; null when still active. Deals keep being created under owner_7 and owner_12 after this date.
+      - name: role
+        description: Job title.
+      - name: manager
+        description: Rep's manager.
+      - name: segment
+        description: Segment the rep covers.
+        data_tests:
+          - accepted_values:
+              arguments:
+                values: ['SMB', 'Mid-Market', 'Enterprise', 'Strategic']
+
+  - name: targets
+    description: >
+      Bronze. Quarterly bookings quota per rep. Grain: one row per quarter per owner.
+      Only 2024 Q1 is usable: see stg_targets. owner_12 has targets for quarters before their start date.
+    config:
+      column_types:
+        quarter: varchar
+        owner_id: varchar
+        segment: varchar
+        target_amount: double
+    data_tests:
+      - unique:
+          arguments:
+            column_name: "quarter || '|' || owner_id"
+    columns:
+      - name: quarter
+        description: Quarter label, format 'YYYY QN'.
+        data_tests:
+          - not_null
+      - name: owner_id
+        description: Owner identifier (FK to owners).
+        data_tests:
+          - relationships:
+              arguments:
+                to: ref('owners')
+                field: owner_id
+      - name: segment
+        description: Segment of the owner.
+      - name: target_amount
+        description: Bookings target in USD.
+        data_tests:
+          - not_null
