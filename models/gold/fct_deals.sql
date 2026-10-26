@@ -1,10 +1,13 @@
 -- Grain: one row per deal. Current state + history summarized from the weekly snapshots.
+-- Assumption: deals_meta is the CRM state on the as-of date. For deals with history it equals the last
+-- snapshot, except three deals with a single snapshot whose CRM stage is ahead of the snapshot.
+-- Furthest stage and weeks per stage come from the snapshots only (weekly, so a fast deal can skip a stage).
 with deals as (
     select * from {{ ref('stg_deals') }}
 ),
 
 owners as (
-    select * from {{ ref('dim_owners') }}
+    select * from {{ ref('stg_owners') }}
 ),
 
 history as (
@@ -46,15 +49,15 @@ select
     o.is_active_as_of                                                   as is_owner_active,
 
     d.close_date - h.won_snapshot_date                                  as days_won_before_close,
-    -- DQ: shown as Closed Won more than 3 weeks before its close_date. Until June 2025 deals were
-    -- marked won at most 6 days before close_date, so a bigger gap is out of pattern.
-    d.close_date - h.won_snapshot_date > 21                             as is_won_well_before_close,
-    -- DQ: deal created after its owner left the company
-    d.created_date > o.role_end_date                                    as is_created_by_inactive_owner,
+    -- DQ: shown as Closed Won more than 6 days before its close_date. Before 9 June 2025 the largest
+    -- gap was 6 days, so a bigger gap is out of pattern. False when the deal has no Won snapshot.
+    coalesce(d.close_date - h.won_snapshot_date > 6, false)             as is_won_well_before_close,
+    -- DQ: deal created after its owner left the company (false for owners still in the company)
+    coalesce(d.created_date > o.role_end_date, false)                   as is_created_by_inactive_owner,
 
     -- Stale = still open but its close date already passed: nobody closed it won or lost.
     d.is_open and d.close_date < date '{{ var("as_of_date") }}'         as is_stale,
-    -- Live = open, created by the as-of date and close date still ahead.
+    -- Live = open, created by the as-of date and close date still ahead (a deal due on the as-of date counts).
     d.is_open and d.close_date >= date '{{ var("as_of_date") }}'
         and not d.is_created_after_as_of                                as is_live_pipeline,
     -- Orphaned = open deal whose owner has left the company.

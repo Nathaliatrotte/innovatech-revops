@@ -1,5 +1,8 @@
 -- Question 2: where are deals stalling, and why?
 -- Deals whose close date has passed, grouped by the furthest stage they reached.
+-- Assumptions:
+--   * Today is the last snapshot date. The analyses are plain SQL, so they do not read the as_of_date variable.
+--   * The furthest stage comes from the weekly snapshots, so a deal that moves fast can skip a stage.
 with deals as (
     select *
     from "3_gold".fct_deals

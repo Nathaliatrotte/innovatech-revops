@@ -1,9 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 316" role="img" aria-labelledby="t d">
-<title id="t">Open pipeline before each quarter</title><desc id="d">Three weeks before each quarter, open pipeline was $2.4M to $4.6M. For Q3 2025 it is $1.74M, of which $774k belongs to reps who have left.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 332" role="img" aria-labelledby="t d">
+<title id="t">Open pipeline before each quarter</title><desc id="d">Three weeks before each quarter, open pipeline was $2.44M to $4.59M. For Q3 2025 it is $1.74M, of which $774k belongs to reps who have left.</desc>
 <style>
   :root { --ink:#0b0b0b; --muted:#52514e; --grid:#d9d8d3; --won:#1baf7a; --lost:#e45d52; --open:#2a78d6; --extra:#8fd3b6; --pipe:#2a78d6; --orphan:#eb6834; }
   @media (prefers-color-scheme: dark) {
-    :root { --ink:#f0efec; --muted:#c3c2b7; --grid:#3a3a38; --won:#199e70; --lost:#d9534a; --open:#3987e5; --extra:#4c9c7e; --pipe:#3987e5; --orphan:#d95926; }
+    :root { --ink:#f0efec; --muted:#c3c2b7; --grid:#3a3a38; --won:#199e70; --lost:#d9534a; --open:#3987e5; --extra:#7cc3a5; --pipe:#3987e5; --orphan:#d95926; }
   }
   text { font-family: system-ui, -apple-system, 'Segoe UI', sans-serif; fill: var(--ink); font-size: 13px; }
   .muted { fill: var(--muted); font-size: 12px; }
@@ -49,4 +49,5 @@
 <text x="655.8" y="182.2" text-anchor="middle" class="strong">$1.74M</text>
 <text x="655.8" y="280" text-anchor="middle" class="muted">2025 Q3 (now)</text>
 <text x="60" y="304" class="muted">Open pipeline for each quarter, measured about 3 weeks before it started</text>
+<text x="60" y="322" class="muted">Q2 2024 is low because the data starts in January 2024</text>
 </svg>

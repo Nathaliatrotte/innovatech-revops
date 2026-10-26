@@ -1,6 +1,11 @@
 -- Question 1: what blew the Q1 forecast?
 -- For each completed quarter: what happened to the start-of-quarter forecast, and where the
 -- bookings that were not in it came from.
+-- Assumptions:
+--   * A deal is "lost" whenever it was lost, even if after the quarter ended.
+--   * The forecast amount is the amount at the start of the quarter; the booked amount is the final
+--     amount, so they can differ for the same won deal.
+--   * Bucket 4 (moved to a later quarter) is empty in the current data, but is kept so no deal is dropped.
 with called as (
     select snapshot_quarter as quarter, deal_id, amount as forecast_amount
     from "3_gold".fct_deal_snapshots

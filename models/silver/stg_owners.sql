@@ -11,6 +11,7 @@ select
     segment,
     role_start_date,
     role_end_date,
+    -- Assumption: a rep whose end date is the as-of date itself has already left.
     role_end_date is null
         or role_end_date > date '{{ var("as_of_date") }}' as is_active_as_of
 

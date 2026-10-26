@@ -1,5 +1,11 @@
 -- Question 3 (history): how much pipeline was open for each quarter about 3 weeks before it
 -- started, and how much that quarter finally booked. The latest row is today's reading for Q3.
+-- Assumptions:
+--   * bookings_per_pipe_dollar divides ALL the quarter's bookings by the starting pipeline, so it also
+--     includes deals created during the quarter. It is not a pure conversion rate.
+--   * The first reading (Q2 2024) is small because the history starts in January 2024, so the
+--     pipeline had not built up yet. The summary leaves it out.
+--   * The latest row is not finished: its bookings so far include the deals marked won early.
 with pipe as (
     select
         close_quarter           as quarter,

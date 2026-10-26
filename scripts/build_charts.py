@@ -1,23 +1,25 @@
 """Draw the three charts of the executive summary as SVG files in docs/charts/.
 
-Run after `dbt build`:  python scripts/build_charts.py
+Run after `dbt build`:  python scripts/build_charts.py   (or give another database file as the first argument)
 Runs the question queries in analyses/. No extra libraries needed.
 """
+import sys
 from pathlib import Path
 
 import duckdb
 
 ROOT = Path(__file__).resolve().parents[1]
-DB = ROOT / "innovatech.duckdb"
+DB = Path(sys.argv[1]) if len(sys.argv) > 1 else ROOT / "innovatech.duckdb"
 OUT = ROOT / "docs" / "charts"
 ANALYSES = ROOT / "analyses"
 
-TARGET = 949347 / 0.82  # Q1 target worked back from the 18% miss (an estimate)
+MISS = 0.18  # Q1 missed its bookings target by 18% (given by the CRO). The target is worked back from it.
+QUARTER = "date '2025-01-01'"  # the quarter of question 1
 
 STYLE = """<style>
   :root { --ink:#0b0b0b; --muted:#52514e; --grid:#d9d8d3; --won:#1baf7a; --lost:#e45d52; --open:#2a78d6; --extra:#8fd3b6; --pipe:#2a78d6; --orphan:#eb6834; }
   @media (prefers-color-scheme: dark) {
-    :root { --ink:#f0efec; --muted:#c3c2b7; --grid:#3a3a38; --won:#199e70; --lost:#d9534a; --open:#3987e5; --extra:#4c9c7e; --pipe:#3987e5; --orphan:#d95926; }
+    :root { --ink:#f0efec; --muted:#c3c2b7; --grid:#3a3a38; --won:#199e70; --lost:#d9534a; --open:#3987e5; --extra:#7cc3a5; --pipe:#3987e5; --orphan:#d95926; }
   }
   text { font-family: system-ui, -apple-system, 'Segoe UI', sans-serif; fill: var(--ink); font-size: 13px; }
   .muted { fill: var(--muted); font-size: 12px; }
@@ -77,25 +79,29 @@ def chart_forecast(con):
     rows = {
         r[0]: r[1:]
         for r in run(con, "q1_forecast", "bucket, forecast_amount::double, booked_amount::double",
-                     "where quarter = date '2025-01-01'")
+                     f"where quarter = {QUARTER}")
     }
     won, lost, left = (rows[b][0] for b in ("1. Called -> won in quarter", "2. Called -> lost", "3. Called -> expired, never closed"))
     booked_called = rows["1. Called -> won in quarter"][1]
     booked_other = sum(v[1] for b, v in rows.items() if b.startswith(("5.", "6.")))
+    target = (booked_called + booked_other) / (1 - MISS)
+    call_date = con.execute(
+        f"select min(snapshot_date) from \"3_gold\".fct_deal_snapshots where is_forecast_call and snapshot_quarter = {QUARTER}"
+    ).fetchone()[0]
     x0, scale = 200, 425 / 1e6
     body = [
         legend([("won", "Won"), ("lost", "Lost"), ("open", "Left open after close date"), ("extra", "Won, not in the forecast")], 200, 12),
-        f'<text x="190" y="82" text-anchor="end" class="strong">Forecast on 6 Jan</text>',
+        f'<text x="190" y="82" text-anchor="end" class="strong">Forecast on {call_date.day} {call_date:%b}</text>',
         f'<text x="190" y="99" text-anchor="end" class="muted">{k(won + lost + left)}</text>',
         stacked_row(x0, 66, 44, scale, [("won", won, k(won)), ("lost", lost, k(lost)), ("open", left, k(left))]),
         f'<text x="190" y="152" text-anchor="end" class="strong">Q1 bookings</text>',
         f'<text x="190" y="169" text-anchor="end" class="muted">{k(booked_called + booked_other)}</text>',
         stacked_row(x0, 136, 44, scale, [("won", booked_called, k(booked_called)), ("extra", booked_other, k(booked_other))]),
-        f'<line x1="{x0 + TARGET * scale:.1f}" x2="{x0 + TARGET * scale:.1f}" y1="52" y2="196" stroke="var(--ink)" stroke-dasharray="4 3"/>',
-        f'<text x="{x0 + TARGET * scale:.1f}" y="214" text-anchor="end" class="muted">Target about {m(TARGET)} (estimate)</text>',
+        f'<line x1="{x0 + target * scale:.1f}" x2="{x0 + target * scale:.1f}" y1="52" y2="196" stroke="var(--ink)" stroke-dasharray="4 3"/>',
+        f'<text x="{x0 + target * scale:.1f}" y="214" text-anchor="end" class="muted">Target about {m(target)} (worked back from the 18% miss)</text>',
     ]
     return svg(720, 226, "Q1 forecast and bookings",
-               f"On 6 January the Q1 forecast was {k(won + lost + left)}: {k(won)} was won, {k(lost)} lost and {k(left)} left open after its close date. Q1 booked {k(booked_called + booked_other)}.",
+               f"On {call_date.day} {call_date:%B} the Q1 forecast was {k(won + lost + left)}: {k(won)} was won, {k(lost)} lost and {k(left)} left open after its close date. Q1 booked {k(booked_called + booked_other)}.",
                "\n".join(body))
 
 
@@ -109,8 +115,10 @@ def chart_funnel(con):
         body.append(f'<text x="190" y="{y + 32}" text-anchor="end" class="muted">{w_ + l_ + o_} deals</text>')
         body.append(stacked_row(x0, y, 36, scale, [("won", w_, str(w_)), ("lost", l_, str(l_)), ("open", o_, str(o_))]))
     body.append(f'<text x="{x0}" y="258" class="muted">Deals whose close date has passed, by the furthest stage they reached</text>')
+    left = {stage: o_ for stage, _, _, o_ in rows}
     return svg(720, 270, "Where deals end up, by stage",
-               "Most deals that never get past Prospecting, Qualification or Proposal are left open after their close date. In Negotiation, 70 were won, 79 lost and 78 left open.",
+               "Deals reach their close date without a decision in every stage. Left open: "
+               + ", ".join(f"{n} in {stage}" for stage, n in left.items()) + ".",
                "\n".join(body))
 
 
@@ -141,8 +149,10 @@ def chart_pipeline(con):
         body.append(f'<text x="{cx:.1f}" y="{base - (amount * scale) - 8:.1f}" text-anchor="middle" class="strong">{m(amount)}</text>')
         body.append(f'<text x="{cx:.1f}" y="{base + 18}" text-anchor="middle" class="muted">{q}{" (now)" if now else ""}</text>')
     body.append(f'<text x="60" y="304" class="muted">Open pipeline for each quarter, measured about 3 weeks before it started</text>')
-    return svg(720, 316, "Open pipeline before each quarter",
-               f"Three weeks before each quarter, open pipeline was $2.4M to $4.6M. For Q3 2025 it is {m(rows[-1][1])}, of which {k(left)} belongs to reps who have left.",
+    body.append(f'<text x="60" y="322" class="muted">Q2 2024 is low because the data starts in January 2024</text>')
+    past = [amount for _, amount, now in rows if not now]
+    return svg(720, 332, "Open pipeline before each quarter",
+               f"Three weeks before each quarter, open pipeline was {m(min(past))} to {m(max(past))}. For Q3 2025 it is {m(rows[-1][1])}, of which {k(left)} belongs to reps who have left.",
                "\n".join(body))
 
 

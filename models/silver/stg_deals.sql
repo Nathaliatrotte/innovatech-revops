@@ -29,7 +29,7 @@ select
     or (forecast_category = 'Best Case' and deal_stage in ('Prospecting', 'Qualification'))
                                                       as is_forecast_ahead_of_stage,
 
-    -- DQ: created after the last snapshot, so it has no history
+    -- DQ: created after the last snapshot, so it has no history. The stall, forecast and pipeline analyses ignore them.
     created_date > date '{{ var("as_of_date") }}'     as is_created_after_as_of
 
 from source

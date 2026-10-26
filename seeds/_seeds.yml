@@ -4,7 +4,8 @@ seeds:
   - name: deals_meta
     description: >
       Bronze. Raw CRM deal export, loaded as-is. Grain: one row per deal, no stage history.
-      For every deal that appears in deals_snapshot, this row equals its last weekly snapshot.
+      For every deal that appears in deals_snapshot, this row equals its last weekly snapshot, except
+      deal_78, deal_291 and deal_618: each has one snapshot and a later stage in the CRM.
       It also holds 50 deals created in Aug 2025, after the last snapshot.
     config:
       column_types:
@@ -42,8 +43,9 @@ seeds:
           - not_null
       - name: close_date
         description: >
-          Close date. For closed deals the snapshot shows them closed 0-6 days before this date
-          (except 15 deals marked won on 2025-06-09, 24-141 days early). For open deals, the expected date.
+          Close date. Won deals show as won 0-6 days before this date, except 17 deals marked won on
+          2025-06-09, 8-141 days early. Lost deals can be marked lost much earlier (up to 140 days).
+          For open deals, the expected date.
         data_tests:
           - not_null
       - name: deal_stage
@@ -192,7 +194,7 @@ seeds:
   - name: targets
     description: >
       Bronze. Quarterly bookings quota per rep. Grain: one row per quarter per owner.
-      Only 2024 Q1 is usable: see stg_targets. owner_12 has targets for quarters before their start date.
+      Only 2024 Q1 is realistic: see stg_targets. owner_12 has targets for quarters before their start date.
     config:
       column_types:
         quarter: varchar

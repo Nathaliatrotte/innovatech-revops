@@ -14,7 +14,7 @@ To run it yourself and look at the data, jump to [Get started](#get-started-how-
 
 ### 1. We missed Q1 bookings by 18%. What blew the forecast?
 
-There was not enough pipeline. The forecast was only 75% of the target, and $354k of its $871k reached its close date and was left open.
+The forecast was small (75% of the target) and nearly half of it never closed: $354k of its $871k reached its close date and was left open.
 
 ![Q1 forecast and bookings](docs/charts/1_q1_forecast.svg)
 
@@ -24,9 +24,9 @@ In every stage, not in one. Deals reach their close date without a decision in P
 
 ![Where deals end up, by stage](docs/charts/2_stalled_deals.svg)
 
-### 3. Given today's pipe, are we on track for next quarter?
+### 3. Given today's pipeline, are we on track for next quarter?
 
-No. Open pipeline is under half the usual level, and 44% of it belongs to reps who have left.
+No. Open pipeline is $1.74M, under half the usual level, and 44% of it belongs to reps who have left.
 
 ![Open pipeline before each quarter](docs/charts/3_q3_pipeline.svg)
 
@@ -48,9 +48,11 @@ The four original files are deals, weekly pipeline snapshots, sales reps and tar
 
 | Table | What it is |
 |---|---|
-| `dim_owners` | One row per sales rep, and whether they are still in the company |
-| `fct_deals` | One row per deal, with its history added (furthest stage, weeks per stage, how it stands today) |
-| `fct_deal_snapshots` | One row per deal per week, with flags for the start-of-quarter forecast and the pipeline reading before each quarter |
+| `dim_owners` | The dimension: one row per sales rep, and whether they are still in the company |
+| `fct_deals` | A fact table: one row per deal, with its history added (furthest stage, weeks per stage, how it stands today) |
+| `fct_deal_snapshots` | A fact table: one row per deal per week, with flags for the start-of-quarter forecast and the pipeline reading before each quarter |
+
+Both fact tables carry `owner_id`, the key to `dim_owners`.
 
 The three questions are not tables. They are short queries in `analyses/`, which you can paste into the DuckDB browser:
 
@@ -58,7 +60,7 @@ The three questions are not tables. They are short queries in `analyses/`, which
 |---|---|
 | 1. Why Q1 missed | `q1_forecast.sql` |
 | 2. Where deals stall | `q2_where_deals_stall.sql` |
-| 3. Is Q3 on track? | `q3_pipeline_before_quarter.sql` (history) and `q3_live_pipeline.sql` (today) |
+| 3. Is Q3 on track? | `q3_pipeline_before_quarter.sql` (history), `q3_live_pipeline.sql` (today) and `q3_deals_to_check.sql` (deals for Finance to confirm) |
 
 ### How the tables connect
 
@@ -89,8 +91,8 @@ flowchart LR
   deals_snapshot --> stg_deal_snapshots
   stg_deal_snapshots --> fct_deal_snapshots
   stg_owners --> dim_owners
+  stg_owners --> fct_deals
   stg_deals --> fct_deals
-  dim_owners --> fct_deals
   stg_deal_snapshots --> fct_deals
 ```
 
@@ -103,16 +105,17 @@ To see this diagram with a description of every column, follow step 3 in [Get st
 | Today / as-of date | 9 June 2025, the last weekly snapshot we have |
 | Bookings | The value of deals that are Closed Won, counted in the quarter of their close date |
 | Forecast | Deals that were Commit, Best Case or already won at the start of the quarter, and due to close in it |
+| Starting pipeline | Open deals due in a quarter, measured on the last weekly snapshot at least 3 weeks before it starts |
 | Left open | A deal still open after its close date, never marked won or lost |
 | Live pipeline | Open deals whose close date is still ahead |
 | Orphaned deal | An open deal whose owner has left the company |
-| Target | About $1.16M a quarter. The targets file is overestimated (see below), so we use the 18% Q1 miss and the team's real bookings of about $1.1M a quarter |
+| Target | About $1.16M a quarter, worked back from the 18% Q1 miss. The targets file is overestimated (see below) |
 
 ## Checks
 
-- Every table has checks on its keys and allowed values.
+- Every table has checks on its keys and allowed values: 55 checks in total.
 - Two checks tie the results back to the original data: total bookings must equal the Closed Won amounts in the source file, and no deal or weekly snapshot may be lost between the raw files and the ready-to-use tables.
-- The data problems above show as warnings, so they are visible without stopping the build.
+- Four checks are warnings on purpose. They point to the data problems below without stopping the build: target growth, forecast ahead of stage, deals won early, and deals created under reps who left.
 
 ## Folder guide
 
@@ -121,7 +124,7 @@ To see this diagram with a description of every column, follow step 3 in [Get st
 | `seeds/` | The four original files |
 | `models/silver/` | Step 2 (cleaning) |
 | `models/gold/` | Step 3 (ready-to-use tables) |
-| `analyses/` | The queries that answer the three questions |
+| `analyses/` | The queries that answer the three questions. They are plain SQL, so they can be pasted into the DuckDB browser |
 | `tests/` | The checks that tie results back to the source |
 | `scripts/` | Draws the charts used in the executive summary |
 | `docs/` | Executive summary (with its charts in `docs/charts/`) |
@@ -130,13 +133,34 @@ To see this diagram with a description of every column, follow step 3 in [Get st
 
 | Problem | What we found | How it is handled |
 |---|---|---|
-| Targets overestimated | From Q2 2024, each rep's target is exactly 6.15 times the last, reaching $589M for Q1 2025 against about $1M booked | Flagged; a realistic target of $1.16M is used instead |
+| Targets overestimated | In Q2 2024 targets jump 1.75–6.15 times, and from Q3 2024 each rep's target is exactly 6.15 times the last, reaching $589M for Q1 2025 against about $1M booked | Flagged (`is_target_plausible`); a realistic target of $1.16M is used instead |
 | Deals left open | 387 deals ($21.8M) are past their close date but still open | Marked as "left open" and left out of live pipeline |
-| Won in bulk | On 9 June, 15 deals jumped to Won 24–141 days before their close date. Before that, no deal was marked won more than 6 days early | Flagged for Finance to confirm |
-| Deals under reps who left | 22 deals were created under two reps after their end date | Flagged |
-| Forecast ahead of stage | 6 deals are in Commit or Best Case too early in the process | Flagged |
-| Data after the last snapshot | 50 deals created in August 2025 have no history | Left out of the analysis |
+| Won in bulk | On 9 June, 17 deals jumped to Won 8–141 days before their close date. Before that, no deal was marked won more than 6 days early | Flagged (`is_won_well_before_close`); not counted as wins in the win rates; listed for Finance in `q3_deals_to_check.sql` |
+| Deals under reps who left | 22 deals were created under two reps after their end date | Flagged (`is_created_by_inactive_owner`) |
+| Forecast ahead of stage | 6 deals are in Commit or Best Case too early in the process | Flagged (`is_forecast_ahead_of_stage`) |
+| No new deals for 3 months | The last deal before August was created on 8 May, and 50 deals appear in August | Not fixed. Possibly a gap in the export, to confirm |
+| Data after the last snapshot | The 50 deals created in August 2025 have no history | Flagged (`is_created_after_as_of`); left out of the stall, forecast and pipeline analyses |
+| CRM ahead of the snapshot | 3 deals have one snapshot and a later stage in the CRM | Kept. Stage reached comes from the snapshots |
 | Personal data | Rep email addresses | Removed in step 2 |
+
+## Assumptions
+
+Where the data does not say, the project makes a choice. These are all of them.
+
+| Assumption | Where | If it is wrong |
+|---|---|---|
+| Today is 9 June 2025, the last snapshot. The date is typed in by hand | `as_of_date` in `dbt_project.yml`. The analyses use the last snapshot date | New weekly data needs the date updated, or the flags describe an older day |
+| Quarters are calendar quarters (Q1 is January to March) | `stg_targets`, and `date_trunc('quarter')` in the other models | Quarter labels shift, and the targets, forecasts and readings follow |
+| The Q1 target is about $1.16M, worked back from the CRO's 18% miss. Q3 uses the same number | `MISS` in `scripts/build_charts.py` and the executive summary | Every "% of target" changes. The conclusions do not |
+| A target that grows more than 50% in one quarter is unrealistic | `is_target_plausible` in `stg_targets` | Only changes the warning |
+| A rep whose end date is the as-of date has already left | `is_active_as_of` in `stg_owners` | Changes who owns "orphaned" deals only if an end date equals the as-of date. None does today |
+| The forecast is the first snapshot of a finished quarter: deals due in it that are Commit, Best Case or already won | `is_forecast_call` in `fct_deal_snapshots` | Changes the forecast size in question 1 |
+| The starting pipeline is the last snapshot at least 21 days, and at most 35 days, before the quarter | `reading_points` in `fct_deal_snapshots` | Changes the pipeline in question 3. Today the readings are 21–23 days before |
+| Won more than 6 days before the close date is out of pattern. Before 9 June the largest gap was 6 days | `is_won_well_before_close` in `fct_deals` | Changes which deals are for Finance to check and the win rates |
+| A deal left open counts as not won in the win rates | `win_rates` in `q3_live_pipeline` | Win rates and the low end of the Q3 estimate go up |
+| The furthest stage and weeks per stage come from the weekly snapshots | `fct_deals`, `q2_where_deals_stall` | A fast deal can skip a stage, so some wins show in an early stage |
+| Bookings per pipeline dollar uses all the quarter's bookings, including deals created in the quarter | `q3_pipeline_before_quarter` | The high end of the Q3 estimate assumes new deals keep arriving as usual |
+| The first reading (Q2 2024) is left out of the average, because the data starts in January 2024 | Executive summary | The average would be 32 cents, not 29 |
 
 ## Get started: how to access the data
 

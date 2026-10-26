@@ -70,25 +70,26 @@ models:
       - name: owner_id
         data_tests: [unique, not_null]
       - name: is_active_as_of
-        description: Still in role on the as_of_date.
+        description: Still in role on the as_of_date. A rep whose end date is the as_of_date counts as gone.
 
   - name: stg_targets
     description: >
       Silver. Quarterly targets with the quarter parsed to a date. Grain: one row per owner per quarter.
       DQ: in 2024 Q2 targets jump 1.75-6.15x per rep, and from 2024 Q3 every target is exactly
-      6.153x the same rep's prior quarter. Only 2024 Q1 is usable as quota.
+      6.153x the same rep's prior quarter, so only 2024 Q1 is realistic.
+      Assumes calendar quarters (Q1 = January to March).
     data_tests:
       - unique:
           arguments:
             column_name: "quarter_label || '|' || owner_id"
     columns:
       - name: quarter_start_date
-        description: First day of the quarter.
+        description: First day of the quarter (calendar quarters). Only used to order each rep's quarters.
         data_tests: [not_null]
       - name: qoq_growth
         description: Target divided by the same owner's previous-quarter target.
       - name: is_target_plausible
-        description: False when the target more than doubled vs the prior quarter.
+        description: False when the target grew more than 50% vs the prior quarter (a judgment call). The first quarter is true.
         data_tests:
           - accepted_values:
               arguments:
