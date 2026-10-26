@@ -15,16 +15,16 @@ ANALYSES = ROOT / "analyses"
 TARGET = 949347 / 0.82  # Q1 target worked back from the 18% miss (an estimate)
 
 STYLE = """<style>
-  :root { --ink:#0b0b0b; --muted:#52514e; --grid:#d9d8d3; --won:#2a78d6; --open:#eb6834; --lost:#1baf7a; --other:#8a8984; }
+  :root { --ink:#0b0b0b; --muted:#52514e; --grid:#d9d8d3; --won:#1baf7a; --lost:#e45d52; --open:#2a78d6; --extra:#8fd3b6; --pipe:#2a78d6; --orphan:#eb6834; }
   @media (prefers-color-scheme: dark) {
-    :root { --ink:#f0efec; --muted:#c3c2b7; --grid:#3a3a38; --won:#3987e5; --open:#d95926; --lost:#199e70; --other:#8a8984; }
+    :root { --ink:#f0efec; --muted:#c3c2b7; --grid:#3a3a38; --won:#199e70; --lost:#d9534a; --open:#3987e5; --extra:#4c9c7e; --pipe:#3987e5; --orphan:#d95926; }
   }
   text { font-family: system-ui, -apple-system, 'Segoe UI', sans-serif; fill: var(--ink); font-size: 13px; }
   .muted { fill: var(--muted); font-size: 12px; }
   .strong { font-weight: 600; }
   .on { fill: #0b0b0b; font-size: 12px; font-weight: 600; }
   .grid { stroke: var(--grid); stroke-width: 1; }
-  .won { fill: var(--won); } .open { fill: var(--open); } .lost { fill: var(--lost); } .other { fill: var(--other); }
+  .won { fill: var(--won); } .open { fill: var(--open); } .lost { fill: var(--lost); } .extra { fill: var(--extra); } .pipe { fill: var(--pipe); } .orphan { fill: var(--orphan); }
 </style>"""
 
 
@@ -84,13 +84,13 @@ def chart_forecast(con):
     booked_other = sum(v[1] for b, v in rows.items() if b.startswith(("5.", "6.")))
     x0, scale = 200, 425 / 1e6
     body = [
-        legend([("won", "Won"), ("lost", "Lost"), ("open", "Left open after close date"), ("other", "Not in the forecast")], 200, 12),
+        legend([("won", "Won"), ("lost", "Lost"), ("open", "Left open after close date"), ("extra", "Won, not in the forecast")], 200, 12),
         f'<text x="190" y="82" text-anchor="end" class="strong">Forecast on 6 Jan</text>',
         f'<text x="190" y="99" text-anchor="end" class="muted">{k(won + lost + left)}</text>',
         stacked_row(x0, 66, 44, scale, [("won", won, k(won)), ("lost", lost, k(lost)), ("open", left, k(left))]),
         f'<text x="190" y="152" text-anchor="end" class="strong">Q1 bookings</text>',
         f'<text x="190" y="169" text-anchor="end" class="muted">{k(booked_called + booked_other)}</text>',
-        stacked_row(x0, 136, 44, scale, [("won", booked_called, k(booked_called)), ("other", booked_other, k(booked_other))]),
+        stacked_row(x0, 136, 44, scale, [("won", booked_called, k(booked_called)), ("extra", booked_other, k(booked_other))]),
         f'<line x1="{x0 + TARGET * scale:.1f}" x2="{x0 + TARGET * scale:.1f}" y1="52" y2="196" stroke="var(--ink)" stroke-dasharray="4 3"/>',
         f'<text x="{x0 + TARGET * scale:.1f}" y="214" text-anchor="end" class="muted">Target about {m(TARGET)} (estimate)</text>',
     ]
@@ -122,7 +122,7 @@ def chart_pipeline(con):
                "where close_quarter = date '2025-07-01'")[0][0]
     base, top, ymax = 262, 56, 5e6
     scale = (base - top) / ymax
-    body = [legend([("won", "Open pipeline"), ("open", "Owned by a rep who has left")], 60, 12)]
+    body = [legend([("pipe", "Open pipeline"), ("orphan", "Owned by a rep who has left")], 60, 12)]
     for t in range(0, 6):
         y = base - t * 1e6 * scale
         body.append(f'<line x1="60" x2="710" y1="{y:.1f}" y2="{y:.1f}" class="grid"/>')
@@ -133,10 +133,10 @@ def chart_pipeline(con):
         bw = 58
         active = amount - (left if now else 0)
         h1 = active * scale
-        body.append(f'<rect x="{cx - bw / 2:.1f}" y="{base - h1:.1f}" width="{bw}" height="{h1:.1f}" class="won"><title>{q}: {m(active)}</title></rect>')
+        body.append(f'<rect x="{cx - bw / 2:.1f}" y="{base - h1:.1f}" width="{bw}" height="{h1:.1f}" class="pipe"><title>{q}: {m(active)}</title></rect>')
         if now:
             h2 = left * scale
-            body.append(f'<rect x="{cx - bw / 2:.1f}" y="{base - h1 - h2 - 2:.1f}" width="{bw}" height="{h2:.1f}" class="open"><title>Owner has left: {k(left)}</title></rect>')
+            body.append(f'<rect x="{cx - bw / 2:.1f}" y="{base - h1 - h2 - 2:.1f}" width="{bw}" height="{h2:.1f}" class="orphan"><title>Owner has left: {k(left)}</title></rect>')
             body.append(f'<text x="{cx:.1f}" y="{base - h1 - h2 / 2 + 2:.1f}" text-anchor="middle" class="on">{k(left)}</text>')
         body.append(f'<text x="{cx:.1f}" y="{base - (amount * scale) - 8:.1f}" text-anchor="middle" class="strong">{m(amount)}</text>')
         body.append(f'<text x="{cx:.1f}" y="{base + 18}" text-anchor="middle" class="muted">{q}{" (now)" if now else ""}</text>')

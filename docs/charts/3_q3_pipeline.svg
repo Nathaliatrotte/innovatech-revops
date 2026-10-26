@@ -1,20 +1,20 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 316" role="img" aria-labelledby="t d">
 <title id="t">Open pipeline before each quarter</title><desc id="d">Three weeks before each quarter, open pipeline was $2.4M to $4.6M. For Q3 2025 it is $1.74M, of which $774k belongs to reps who have left.</desc>
 <style>
-  :root { --ink:#0b0b0b; --muted:#52514e; --grid:#d9d8d3; --won:#2a78d6; --open:#eb6834; --lost:#1baf7a; --other:#8a8984; }
+  :root { --ink:#0b0b0b; --muted:#52514e; --grid:#d9d8d3; --won:#1baf7a; --lost:#e45d52; --open:#2a78d6; --extra:#8fd3b6; --pipe:#2a78d6; --orphan:#eb6834; }
   @media (prefers-color-scheme: dark) {
-    :root { --ink:#f0efec; --muted:#c3c2b7; --grid:#3a3a38; --won:#3987e5; --open:#d95926; --lost:#199e70; --other:#8a8984; }
+    :root { --ink:#f0efec; --muted:#c3c2b7; --grid:#3a3a38; --won:#199e70; --lost:#d9534a; --open:#3987e5; --extra:#4c9c7e; --pipe:#3987e5; --orphan:#d95926; }
   }
   text { font-family: system-ui, -apple-system, 'Segoe UI', sans-serif; fill: var(--ink); font-size: 13px; }
   .muted { fill: var(--muted); font-size: 12px; }
   .strong { font-weight: 600; }
   .on { fill: #0b0b0b; font-size: 12px; font-weight: 600; }
   .grid { stroke: var(--grid); stroke-width: 1; }
-  .won { fill: var(--won); } .open { fill: var(--open); } .lost { fill: var(--lost); } .other { fill: var(--other); }
+  .won { fill: var(--won); } .open { fill: var(--open); } .lost { fill: var(--lost); } .extra { fill: var(--extra); } .pipe { fill: var(--pipe); } .orphan { fill: var(--orphan); }
 </style>
-<rect x="60" y="12" width="12" height="12" rx="2" class="won"/>
+<rect x="60" y="12" width="12" height="12" rx="2" class="pipe"/>
 <text x="78" y="23" class="muted">Open pipeline</text>
-<rect x="191" y="12" width="12" height="12" rx="2" class="open"/>
+<rect x="191" y="12" width="12" height="12" rx="2" class="orphan"/>
 <text x="209" y="23" class="muted">Owned by a rep who has left</text>
 <line x1="60" x2="710" y1="262.0" y2="262.0" class="grid"/>
 <text x="52" y="266.0" text-anchor="end" class="muted">$0</text>
@@ -28,23 +28,23 @@
 <text x="52" y="101.2" text-anchor="end" class="muted">$4M</text>
 <line x1="60" x2="710" y1="56.0" y2="56.0" class="grid"/>
 <text x="52" y="60.0" text-anchor="end" class="muted">$5M</text>
-<rect x="85.2" y="161.5" width="58" height="100.5" class="won"><title>2024 Q2: $2.44M</title></rect>
+<rect x="85.2" y="161.5" width="58" height="100.5" class="pipe"><title>2024 Q2: $2.44M</title></rect>
 <text x="114.2" y="153.5" text-anchor="middle" class="strong">$2.44M</text>
 <text x="114.2" y="280" text-anchor="middle" class="muted">2024 Q2</text>
-<rect x="193.5" y="72.9" width="58" height="189.1" class="won"><title>2024 Q3: $4.59M</title></rect>
+<rect x="193.5" y="72.9" width="58" height="189.1" class="pipe"><title>2024 Q3: $4.59M</title></rect>
 <text x="222.5" y="64.9" text-anchor="middle" class="strong">$4.59M</text>
 <text x="222.5" y="280" text-anchor="middle" class="muted">2024 Q3</text>
-<rect x="301.8" y="123.1" width="58" height="138.9" class="won"><title>2024 Q4: $3.37M</title></rect>
+<rect x="301.8" y="123.1" width="58" height="138.9" class="pipe"><title>2024 Q4: $3.37M</title></rect>
 <text x="330.8" y="115.1" text-anchor="middle" class="strong">$3.37M</text>
 <text x="330.8" y="280" text-anchor="middle" class="muted">2024 Q4</text>
-<rect x="410.2" y="89.5" width="58" height="172.5" class="won"><title>2025 Q1: $4.19M</title></rect>
+<rect x="410.2" y="89.5" width="58" height="172.5" class="pipe"><title>2025 Q1: $4.19M</title></rect>
 <text x="439.2" y="81.5" text-anchor="middle" class="strong">$4.19M</text>
 <text x="439.2" y="280" text-anchor="middle" class="muted">2025 Q1</text>
-<rect x="518.5" y="103.5" width="58" height="158.5" class="won"><title>2025 Q2: $3.85M</title></rect>
+<rect x="518.5" y="103.5" width="58" height="158.5" class="pipe"><title>2025 Q2: $3.85M</title></rect>
 <text x="547.5" y="95.5" text-anchor="middle" class="strong">$3.85M</text>
 <text x="547.5" y="280" text-anchor="middle" class="muted">2025 Q2</text>
-<rect x="626.8" y="222.1" width="58" height="39.9" class="won"><title>2025 Q3: $0.97M</title></rect>
-<rect x="626.8" y="188.2" width="58" height="31.9" class="open"><title>Owner has left: $774k</title></rect>
+<rect x="626.8" y="222.1" width="58" height="39.9" class="pipe"><title>2025 Q3: $0.97M</title></rect>
+<rect x="626.8" y="188.2" width="58" height="31.9" class="orphan"><title>Owner has left: $774k</title></rect>
 <text x="655.8" y="208.1" text-anchor="middle" class="on">$774k</text>
 <text x="655.8" y="182.2" text-anchor="middle" class="strong">$1.74M</text>
 <text x="655.8" y="280" text-anchor="middle" class="muted">2025 Q3 (now)</text>

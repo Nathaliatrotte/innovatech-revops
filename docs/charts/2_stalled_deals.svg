@@ -1,16 +1,16 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 270" role="img" aria-labelledby="t d">
 <title id="t">Where deals end up, by stage</title><desc id="d">Most deals that never get past Prospecting, Qualification or Proposal are left open after their close date. In Negotiation, 70 were won, 79 lost and 78 left open.</desc>
 <style>
-  :root { --ink:#0b0b0b; --muted:#52514e; --grid:#d9d8d3; --won:#2a78d6; --open:#eb6834; --lost:#1baf7a; --other:#8a8984; }
+  :root { --ink:#0b0b0b; --muted:#52514e; --grid:#d9d8d3; --won:#1baf7a; --lost:#e45d52; --open:#2a78d6; --extra:#8fd3b6; --pipe:#2a78d6; --orphan:#eb6834; }
   @media (prefers-color-scheme: dark) {
-    :root { --ink:#f0efec; --muted:#c3c2b7; --grid:#3a3a38; --won:#3987e5; --open:#d95926; --lost:#199e70; --other:#8a8984; }
+    :root { --ink:#f0efec; --muted:#c3c2b7; --grid:#3a3a38; --won:#199e70; --lost:#d9534a; --open:#3987e5; --extra:#4c9c7e; --pipe:#3987e5; --orphan:#d95926; }
   }
   text { font-family: system-ui, -apple-system, 'Segoe UI', sans-serif; fill: var(--ink); font-size: 13px; }
   .muted { fill: var(--muted); font-size: 12px; }
   .strong { font-weight: 600; }
   .on { fill: #0b0b0b; font-size: 12px; font-weight: 600; }
   .grid { stroke: var(--grid); stroke-width: 1; }
-  .won { fill: var(--won); } .open { fill: var(--open); } .lost { fill: var(--lost); } .other { fill: var(--other); }
+  .won { fill: var(--won); } .open { fill: var(--open); } .lost { fill: var(--lost); } .extra { fill: var(--extra); } .pipe { fill: var(--pipe); } .orphan { fill: var(--orphan); }
 </style>
 <rect x="200" y="12" width="12" height="12" rx="2" class="won"/>
 <text x="218" y="23" class="muted">Won</text>
