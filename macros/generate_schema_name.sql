@@ -1,4 +1,4 @@
--- Use the custom schema as-is (1_bronze/2_silver/3_gold) instead of dbt's default "<target>_<custom>".
+-- Use the custom schema as-is (1_bronze/2_silver/3_gold) instead of DBT's default "<target>_<custom>".
 {% macro generate_schema_name(custom_schema_name, node) -%}
     {%- if custom_schema_name is none -%}
         {{ target.schema }}

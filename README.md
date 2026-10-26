@@ -1,6 +1,12 @@
 # Innovatech RevOps
 
-dbt + DuckDB analytics case for a CRO: why the Q1 forecast missed by 18%, where deals stall, and whether next quarter is on track. Medallion layers (bronze, silver, gold), data-quality flags on messy CRM data, reconciliation tests, and an executive summary with charts.
+This repository answers three questions from the CRO:
+
+1. Why did the Q1 forecast miss the target by 18%?
+2. Where are deals stalling, and why?
+3. Given today's pipeline, are we on track for next quarter?
+
+It was built with DBT plus DuckDB as the data architecture. The data is organised as a star schema (one table of sales reps and two fact tables of deals) and goes through the medallion layers (bronze, silver and gold). It includes data-quality flags for the messy CRM data, checks that tie the results back to the source files, and an executive summary with charts.
 
 To run it yourself and look at the data, jump to [Get started](#get-started-how-to-access-the-data).
 
@@ -8,13 +14,13 @@ To run it yourself and look at the data, jump to [Get started](#get-started-how-
 
 ### 1. We missed Q1 bookings by 18%. What blew the forecast?
 
-The forecast was too small, and its deals were never closed out: $354k of the $871k forecast reached its close date and was left open.
+There was not enough pipeline. The forecast was only 75% of the target, and $354k of its $871k reached its close date and was left open.
 
 ![Q1 forecast and bookings](docs/charts/1_q1_forecast.svg)
 
 ### 2. Where are deals stalling, and why?
 
-At the start. Deals that don't leave Prospecting sit there until their close date passes, and nobody closes them.
+In every stage, not in one. Deals reach their close date without a decision in Prospecting, Qualification, Proposal and Negotiation, and nobody closes them. Cleaning them up shows the real pipeline, but more pipeline is what adds revenue.
 
 ![Where deals end up, by stage](docs/charts/2_stalled_deals.svg)
 
@@ -100,19 +106,7 @@ To see this diagram with a description of every column, follow step 3 in [Get st
 | Left open | A deal still open after its close date, never marked won or lost |
 | Live pipeline | Open deals whose close date is still ahead |
 | Orphaned deal | An open deal whose owner has left the company |
-| Q1 target | About $1.16M, worked back from the 18% miss, because the targets file is unusable (see below) |
-
-## Problems found in the data
-
-| Problem | What we found | How it is handled |
-|---|---|---|
-| Targets unusable | After Q1 2024, each quarter's target is exactly 6.15 times the last | Flagged; the Q1 2025 target is estimated instead |
-| Deals left open | 387 deals ($21.8M) are past their close date but still open | Marked as "left open" and left out of live pipeline |
-| Won in bulk | On 9 June, 15 deals jumped to Won 24–141 days before their close date. Before that, no deal was marked won more than 6 days early | Flagged for Finance to confirm |
-| Deals under reps who left | 22 deals were created under two reps after their end date | Flagged |
-| Forecast ahead of stage | 6 deals are in Commit or Best Case too early in the process | Flagged |
-| Data after the last snapshot | 50 deals created in August 2025 have no history | Left out of the analysis |
-| Personal data | Rep email addresses | Removed in step 2 |
+| Target | About $1.16M a quarter. The targets file is overestimated (see below), so we use the 18% Q1 miss and the team's real bookings of about $1.1M a quarter |
 
 ## Checks
 
@@ -131,6 +125,18 @@ To see this diagram with a description of every column, follow step 3 in [Get st
 | `tests/` | The checks that tie results back to the source |
 | `scripts/` | Draws the charts used in the executive summary |
 | `docs/` | Executive summary (with its charts in `docs/charts/`) |
+
+## Problems found in the data
+
+| Problem | What we found | How it is handled |
+|---|---|---|
+| Targets overestimated | From Q2 2024, each rep's target is exactly 6.15 times the last, reaching $589M for Q1 2025 against about $1M booked | Flagged; a realistic target of $1.16M is used instead |
+| Deals left open | 387 deals ($21.8M) are past their close date but still open | Marked as "left open" and left out of live pipeline |
+| Won in bulk | On 9 June, 15 deals jumped to Won 24–141 days before their close date. Before that, no deal was marked won more than 6 days early | Flagged for Finance to confirm |
+| Deals under reps who left | 22 deals were created under two reps after their end date | Flagged |
+| Forecast ahead of stage | 6 deals are in Commit or Best Case too early in the process | Flagged |
+| Data after the last snapshot | 50 deals created in August 2025 have no history | Left out of the analysis |
+| Personal data | Rep email addresses | Removed in step 2 |
 
 ## Get started: how to access the data
 
@@ -170,7 +176,7 @@ select * from "3_gold".fct_deals;
 
 Schema names start with a number, so put quotes around them in SQL. To see an answer to one of the three questions, open a file in `analyses/`, paste it into the browser and run it.
 
-DuckDB lets only one program use the database at a time. Press Enter in the terminal to stop the browser **before you run any `dbt` command**, or dbt will fail with `Could not set lock on file`.
+DuckDB lets only one program use the database at a time. Press Enter in the terminal to stop the browser **before you run any `dbt` command**, or DBT will fail with `Could not set lock on file`.
 
 **See how the tables connect, with every column explained.** Stop the browser first, then:
 

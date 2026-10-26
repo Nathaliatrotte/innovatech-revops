@@ -1,4 +1,4 @@
-# DuckDB local warehouse, no secrets. Path is relative to the main folder, where dbt runs.
+# DuckDB local warehouse, no secrets. Path is relative to the main folder, where DBT runs.
 innovatech:
   target: dev
   outputs:
